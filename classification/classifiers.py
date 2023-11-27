@@ -88,9 +88,6 @@ Please determine whether the following user prompt is related to code or not:\n\
 If it's related to code, output "[[Y]]", if not, output "[[N]]". Please carefully follow this format.
 """
         convs = [
-            {"role": "system", "content": """
-Please determine whether the following user prompt is related to code or not. If it's related to code, output "[[Y]]", if not, output "[[N]]". Please carefully follow this format.
-"""},
             {"role": "user", "content": prompt_template.format(prompt=prompt)},
         ]
         response = openai.ChatCompletion.create(
