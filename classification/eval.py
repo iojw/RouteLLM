@@ -6,9 +6,19 @@ from tqdm import tqdm
 
 data = pd.read_csv("classification/data.csv")
 
-for classifier_cls in classifiers.CLASSIFIERS:
-    classifier = classifier_cls()
-    print(f"Classifier: {classifier_cls.__name__}")
+# only use first 20 rows for testing
+# data = data.iloc[:20]
+
+# List of classifiers to use
+CLASSIFIERS = [
+    classifiers.RandomClassifier(),
+    classifiers.LLMClassifier(model="gpt-3.5-turbo"),
+    classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
+]
+
+for classifier_cls in CLASSIFIERS:
+    classifier = classifier_cls
+    print(f"Classifier: {classifier.model}")
 
     with ThreadPoolExecutor(8) as executor:
         future = []

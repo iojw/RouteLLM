@@ -1,6 +1,7 @@
 from abc import abstractmethod
 import random
 
+import os
 import openai
 
 class Classifier:
@@ -10,15 +11,25 @@ class Classifier:
 
 
 class RandomClassifier(Classifier):
+    def __init__(self, model=None, api_base=None, api_key=None):
+        self.model = "Random"
+
     def is_code_prompt(self, prompt: str) -> bool:
         return bool(random.getrandbits(1))
 
 
-class GPTClassifier(Classifier):
-    def __init__(self, model="gpt-3.5-turbo"):
+class LLMClassifier(Classifier):
+    def __init__(self, model=None, api_base=None, api_key=None):
+        assert model is not None, "Please specify a model name"
+
         self.model = model
+        self.api_base = "https://api.openai.com/v1" if api_base is None else api_base
+        self.api_key = os.environ["OPENAI_API_KEY"] if api_key is None else api_key
 
     def is_code_prompt(self, prompt: str) -> bool:
+        openai.api_key = self.api_key
+        openai.api_base = self.api_base
+
         prompt_template = """
 Please determine whether the following user prompt is related to code or not:\n\n"
 {prompt}\n\n
@@ -43,7 +54,4 @@ Please determine whether the following user prompt is related to code or not. If
         elif "[[N]]" in output:
             return False
         else:
-            raise ValueError("Invalid response from GPT-3", output)
-
-# List of classifiers to use
-CLASSIFIERS = [RandomClassifier, GPTClassifier]
+            raise ValueError("Invalid response.", output)
