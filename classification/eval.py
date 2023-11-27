@@ -12,6 +12,7 @@ data = pd.read_csv("classification/data.csv")
 # List of classifiers to use
 CLASSIFIERS = [
     classifiers.RandomClassifier(),
+    classifiers.NgramClassifier(),
     classifiers.LLMClassifier(model="gpt-3.5-turbo"),
     classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
 ]
