@@ -103,3 +103,43 @@ If it's related to code, output "[[Y]]", if not, output "[[N]]". Please carefull
             return False
         else:
             raise ValueError("Invalid response.", output)
+
+    def classify_prompt(self, prompt: str) -> bool:
+        openai.api_key = self.api_key
+        openai.api_base = self.api_base
+
+        prompt_template = """
+Determine whether the user query falls into one of the following categories:
+1. Coding: Queries about coding, programming languages, libraries, and tools.
+2. Math: Queries about math problem solving.
+3. Others: Anything that does not fall into the above categories.
+Your output should be wrapped by "[[" and "]]". For example, "[[3. Others]]".
+
+[USER QUERY] {prompt!r}
+
+[ANSWER]
+"""
+        convs = [
+            {"role": "user", "content": prompt_template.format(prompt=prompt)},
+        ]
+        response = openai.ChatCompletion.create(
+            model=self.model,
+            messages=convs,
+            temperature=0,
+            max_tokens=512,
+        )
+        output = response["choices"][0]["message"]["content"]
+
+        # regex to extract the answer
+        import re
+        m = re.search(r"\[\[(.*)\]\]", output)
+        if m is None:
+            print("Invalid response.", output)
+            return "format_error"
+        output = m.group(1)
+        if "Coding" in output:
+            return "coding"
+        elif "Math" in output:
+            return "math"
+        elif "Others" in output:
+            return "others"
