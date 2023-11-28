@@ -21,6 +21,9 @@ class RandomClassifier(Classifier):
     def is_code_prompt(self, prompt: str) -> bool:
         return bool(random.getrandbits(1))
 
+    def classify_prompt(self, prompt: str) -> bool:
+        return random.choice(["coding", "math", "others"])
+
 class NgramClassifier:
     def __init__(self, ngram_size=2):
         self.model = "Ngram"
@@ -68,6 +71,9 @@ class NgramClassifier:
             lang_prob += math.log(self._calculate_ngram_probability(ngram, False))
         
         return code_prob > lang_prob
+
+    def classify_prompt(self, prompt):
+        raise NotImplementedError("NgramClassifier does not support classify_prompt")
 
 class LLMClassifier(Classifier):
     def __init__(self, model=None, api_base=None, api_key=None):
