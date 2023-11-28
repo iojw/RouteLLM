@@ -1,13 +1,17 @@
-from abc import abstractmethod
-from datasets import load_dataset
-import random
-
-import os
-import openai
-from collections import Counter
 import math
-import samples
+import os
+import random
+from abc import abstractmethod
+from collections import Counter
 from enum import Enum
+from typing import List
+
+import openai
+import samples
+import torch
+from datasets import load_dataset
+from sentence_transformers import SentenceTransformer
+from torch import nn
 
 
 class Label(Enum):
@@ -33,6 +37,7 @@ class RandomClassifier(Classifier):
     def classify_prompt(self, prompt: str) -> bool:
         return random.choice([Label.CODING, Label.MATH, Label.NONE])
 
+
 class NgramClassifier:
     def __init__(self, ngram_size=2):
         self.model = "Ngram"
@@ -50,7 +55,7 @@ class NgramClassifier:
         text = self._preprocess(text)
         ngrams = []
         for i in range(len(text) - self.ngram_size + 1):
-            ngrams.append(text[i:i + self.ngram_size])
+            ngrams.append(text[i : i + self.ngram_size])
         return ngrams
 
     def train(self, code_samples, language_samples):
@@ -78,11 +83,12 @@ class NgramClassifier:
         for ngram in ngrams:
             code_prob += math.log(self._calculate_ngram_probability(ngram, True))
             lang_prob += math.log(self._calculate_ngram_probability(ngram, False))
-        
+
         return code_prob > lang_prob
 
     def classify_prompt(self, prompt):
         raise NotImplementedError("NgramClassifier does not support classify_prompt")
+
 
 class LLMClassifier(Classifier):
     def __init__(self, model=None, api_base=None, api_key=None):
@@ -147,6 +153,7 @@ Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
 
         # regex to extract the answer
         import re
+
         m = re.search(r"\[\[(.*)\]\]", output)
         if m is None:
             print("Invalid response.", output)
@@ -161,3 +168,50 @@ Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
         else:
             print("Invalid response.", output)
             return Label.FAILED
+
+
+class EmbeddingClassifier(nn.Module):
+    def __init__(self, model_path=None):
+        super().__init__()
+        self.embed_model = SentenceTransformer("all-mpnet-base-v2")
+        self.embed_model.requires_grad_(False)
+        self.classifier = nn.Linear(768, 3)
+        if model_path is not None:
+            if os.path.exists(model_path):
+                print(f"Loading {model_path}")
+                self.classifier.load_state_dict(torch.load(model_path))
+            else:
+                print("No trained model found.")
+        else:
+            print("No model provided, use a random initialized model")
+        self.map_name = ["coding", "math", "none"]
+        self.model = f"Embedding Classifier {model_path}"
+
+    def forward(self, prompts: List[str]) -> bool:
+        embeddings = self.embed_model.encode(prompts)
+        embeddings_tensor = torch.vstack([torch.Tensor(embedding) for embedding in embeddings])
+        return self.classifier(embeddings_tensor)
+
+    def classify_prompt(self, prompt: str) -> str:
+        _, idx = torch.max(self.forward([prompt])[0], 0)
+        pred_class = self.map_name[idx.item()]
+        if pred_class == "coding":
+            return Label.CODING
+        elif pred_class == "math":
+            return Label.MATH
+        elif pred_class == "none":
+            return Label.NONE
+
+    def train(self, dataloader, optimizer, epochs, loss_fn=torch.nn.CrossEntropyLoss()):
+        for epoch in range(epochs):
+            for batch in dataloader:
+                prompts = list(batch["Prompt"][0])
+                labels = batch["Label"][0].to(torch.long)
+                optimizer.zero_grad()
+                output = self(prompts)
+                assert output.shape[0] == labels.shape[0] and output.shape[1] == 3
+                loss = loss_fn(output, labels)
+                loss.backward()
+                optimizer.step()
+                print(loss.item())
+            torch.save(self.classifier.state_dict(), f"embedding_model_{epoch + 1}.pt")

@@ -28,6 +28,7 @@ def eval(args):
         #classifiers.RandomClassifier(),
         #classifiers.NgramClassifier(),
         #classifiers.LLMClassifier(model="gpt-3.5-turbo"),
+        classifiers.EmbeddingClassifier(model_path="embedding_model_3.pt"),
     ]
 
     for classifier_cls in CLASSIFIERS:
