@@ -7,6 +7,15 @@ import openai
 from collections import Counter
 import math
 import samples
+from enum import Enum
+
+
+class Label(Enum):
+    CODING = 0
+    MATH = 1
+    NONE = 2
+    FAILED = 3
+
 
 class Classifier:
     @abstractmethod
@@ -22,7 +31,7 @@ class RandomClassifier(Classifier):
         return bool(random.getrandbits(1))
 
     def classify_prompt(self, prompt: str) -> bool:
-        return random.choice(["coding", "math", "others"])
+        return random.choice([Label.CODING, Label.MATH, Label.NONE])
 
 class NgramClassifier:
     def __init__(self, ngram_size=2):
@@ -118,8 +127,8 @@ If it's related to code, output "[[Y]]", if not, output "[[N]]". Please carefull
 Determine whether the user query falls into one of the following categories:
 1. Coding: Queries about coding, programming languages, libraries, and tools.
 2. Math: Queries about math problem solving.
-3. Others: Anything that does not fall into the above categories.
-Your output should be wrapped by "[[" and "]]". For example, "[[3. Others]]".
+3. None: Anything that does not fall into the above categories.
+Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
 
 [USER QUERY] {prompt!r}
 
@@ -144,11 +153,14 @@ Your output should be wrapped by "[[" and "]]". For example, "[[3. Others]]".
             return "format_error"
         output = m.group(1)
         if "Coding" in output:
-            return "coding"
+            return Label.CODING
         elif "Math" in output:
-            return "math"
-        elif "Others" in output:
-            return "others"
+            return Label.MATH
+        elif "None" in output:
+            return Label.NONE
+        else:
+            print("Invalid response.", output)
+            return Label.FAILED
 
 
 class FinetunedClassifier(Classifier):
