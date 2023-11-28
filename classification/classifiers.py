@@ -184,6 +184,7 @@ class FinetunedClassifier(Classifier):
         formatted_query = formatted_query.lstrip()
         output = self.llm.generate(formatted_query, self.sampling_params)[0]
         output = output.outputs[0].text + "]]"
+
         # regex to extract the answer
         import re
         m = re.search(r"\[\[(.*)\]\]", output)
@@ -192,8 +193,11 @@ class FinetunedClassifier(Classifier):
             return "format_error"
         output = m.group(1)
         if "Programming" in output:
-            return "coding"
+            return Label.CODING
         elif "Math" in output:
-            return "math"
+            return Label.MATH
         elif "None" in output:
-            return "others"
+            return Label.NONE
+        else:
+            print("Invalid response.", output)
+            return Label.FAILED
