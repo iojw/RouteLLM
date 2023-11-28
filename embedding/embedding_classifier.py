@@ -66,14 +66,14 @@ class DatasetFromPandas(Dataset):
         Y = [self.MAP[y] for y in Y]
         return {"Prompt": X, "Label": Y}
 
+if __name__ == "__main__":
+    dataset = DatasetFromPandas(pd.read_csv("merged_data.csv"))
+    dataloaders = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
+    classifier = EmbeddingClassifier()
+    optimizer = torch.optim.Adam(classifier.parameters(), lr=0.001)
+    epochs = 3
+    classifier.train(dataloaders, optimizer, epochs=epochs)
 
-dataset = DatasetFromPandas(pd.read_csv("/data/tianhao/RouteLLM/embedding/merged_data.csv"))
-dataloaders = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=True)
-classifier = EmbeddingClassifier()
-optimizer = torch.optim.Adam(classifier.parameters(), lr=0.001)
-epochs = 3
-classifier.train(dataloaders, optimizer, epochs=epochs)
-
-str = "Write a program that takes a list of numbers and prints each number in the list that is even."
-print(classifier.forward([str]))
-print(classifier.classify_prompt(str))
+    str = "Write a program that takes a list of numbers and prints each number in the list that is even."
+    print(classifier.forward([str]))
+    print(classifier.classify_prompt(str))
