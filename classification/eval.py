@@ -9,11 +9,14 @@ SOURCE2CAT = {
     "humaneval": "coding",
     "gsm8k": "math",
     "mmlu": "others",
+    "mtbench-coding": "coding",
+    "mtbench-math": "math",
+    "mtbench-writing": "others",
 }
 
 def eval(args):
 
-    data = pd.read_csv("data_v1.csv")
+    data = pd.read_csv(args.bench_file)
 
     # only use first 20 rows for testing
     # data = data.iloc[:20]
@@ -24,7 +27,7 @@ def eval(args):
         #classifiers.NgramClassifier(),
         # classifiers.LLMClassifier(model="gpt-3.5-turbo"),
         # classifiers.LLMClassifier(model="vicuna-7b-v1.5", api_base="FILLME"),
-        # classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
+        classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
     ]
 
     for classifier_cls in CLASSIFIERS:
@@ -48,6 +51,7 @@ def eval(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--bench-file", type=str, default="benchmark/data_mtbench.csv")
     parser.add_argument("--parallel", type=int, default=8)
     args = parser.parse_args()
 

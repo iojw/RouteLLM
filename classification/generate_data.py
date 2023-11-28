@@ -51,12 +51,26 @@ def gen_gsk8k():
     return gsm8k_dataset
 
 
+def gen_mtbench():
+    mtbench_dataset = (
+        load_dataset("HuggingFaceH4/mt_bench_prompts", split="train")
+    )
+    mtbench_dataset = mtbench_dataset.map(
+        lambda row: {"prompt": row["prompt"][0], "source": "mtbench-"+row["category"]},
+        remove_columns=["prompt", "prompt_id", "category", "reference"],
+    )
+
+    # only keep coding/math/stem categories
+    mtbench_dataset = mtbench_dataset.filter(
+        lambda row: row["source"] in ["mtbench-coding", "mtbench-math", "mtbench-writing"])
+    return mtbench_dataset
+
 def gen_data_v0():
     mmlu_dataset = gen_mmlu()
     human_eval_dataset = gen_human_eval()
 
     concatenate_datasets([mmlu_dataset, human_eval_dataset]).shuffle(seed=SEED).to_csv(
-        "data.csv"
+        "benchmark/data_v0.csv"
     )
 
 
@@ -66,7 +80,18 @@ def gen_data_v1():
     gsk8k_dataset = gen_gsk8k()
 
     concatenate_datasets([mmlu_dataset, human_eval_dataset, gsk8k_dataset]).shuffle(seed=SEED).to_csv(
-        "data_v1.csv"
+        "benchmark/data_v1.csv"
     )
 
+
+def gen_data_mtbench():
+    mt_bench_dataset = gen_mtbench()
+
+    concatenate_datasets([mt_bench_dataset]).shuffle(seed=SEED).to_csv(
+        "benchmark/data_mtbench.csv"
+    )
+
+
+# gen_data_v0()
 gen_data_v1()
+gen_data_mtbench()
