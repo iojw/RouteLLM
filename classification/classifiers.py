@@ -1,7 +1,7 @@
 from abc import abstractmethod
 from datasets import load_dataset
 import random
-
+import textwrap
 import os
 import openai
 from collections import Counter
@@ -153,6 +153,46 @@ Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
             return "format_error"
         output = m.group(1)
         if "Coding" in output:
+            return Label.CODING
+        elif "Math" in output:
+            return Label.MATH
+        elif "None" in output:
+            return Label.NONE
+        else:
+            print("Invalid response.", output)
+            return Label.FAILED
+
+
+class FinetunedClassifier(Classifier):
+
+    def __init__(self, model: str):
+        from vllm import LLM, SamplingParams
+        self.model = model
+        self.llm = LLM(model)
+        self.sampling_params = SamplingParams(max_tokens=32, stop=["]]", "]].", "]],"])
+
+    def classify_prompt(self, prompt: str) -> bool:
+        formatted_query = textwrap.dedent(f"""
+            [INST] Determine whether the user query falls into one of the following categories:
+            1. Programming: Queries about programming languages, libraries, and tools.
+            2. Math: Queries about math, statistics, and data science.
+            3. None: Anything that does not fall into the above categories.
+            Your choice should be wrapped by “[[” and “]]”. For example, “[[3. None]]”.
+            [USER QUERY] {prompt!r}
+            [ANSWER]"""
+        )
+        formatted_query = formatted_query.lstrip()
+        output = self.llm.generate(formatted_query, self.sampling_params)[0]
+        output = output.outputs[0].text + "]]"
+
+        # regex to extract the answer
+        import re
+        m = re.search(r"\[\[(.*)\]\]", output)
+        if m is None:
+            print("Invalid response.", output)
+            return "format_error"
+        output = m.group(1)
+        if "Programming" in output:
             return Label.CODING
         elif "Math" in output:
             return Label.MATH
