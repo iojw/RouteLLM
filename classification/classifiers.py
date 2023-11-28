@@ -7,6 +7,15 @@ import openai
 from collections import Counter
 import math
 import samples
+from enum import Enum
+
+
+class Label(Enum):
+    CODING = 0
+    MATH = 1
+    NONE = 2
+    FAILED = 3
+
 
 class Classifier:
     @abstractmethod
@@ -20,6 +29,9 @@ class RandomClassifier(Classifier):
 
     def is_code_prompt(self, prompt: str) -> bool:
         return bool(random.getrandbits(1))
+
+    def classify_prompt(self, prompt: str) -> bool:
+        return random.choice([Label.CODING, Label.MATH, Label.NONE])
 
 class NgramClassifier:
     def __init__(self, ngram_size=2):
@@ -69,6 +81,9 @@ class NgramClassifier:
         
         return code_prob > lang_prob
 
+    def classify_prompt(self, prompt):
+        raise NotImplementedError("NgramClassifier does not support classify_prompt")
+
 class LLMClassifier(Classifier):
     def __init__(self, model=None, api_base=None, api_key=None):
         assert model is not None, "Please specify a model name"
@@ -103,3 +118,46 @@ If it's related to code, output "[[Y]]", if not, output "[[N]]". Please carefull
             return False
         else:
             raise ValueError("Invalid response.", output)
+
+    def classify_prompt(self, prompt: str) -> bool:
+        openai.api_key = self.api_key
+        openai.api_base = self.api_base
+
+        prompt_template = """
+Determine whether the user query falls into one of the following categories:
+1. Coding: Queries about coding, programming languages, libraries, and tools.
+2. Math: Queries about math problem solving.
+3. None: Anything that does not fall into the above categories.
+Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
+
+[USER QUERY] {prompt!r}
+
+[ANSWER]
+"""
+        convs = [
+            {"role": "user", "content": prompt_template.format(prompt=prompt)},
+        ]
+        response = openai.ChatCompletion.create(
+            model=self.model,
+            messages=convs,
+            temperature=0,
+            max_tokens=512,
+        )
+        output = response["choices"][0]["message"]["content"]
+
+        # regex to extract the answer
+        import re
+        m = re.search(r"\[\[(.*)\]\]", output)
+        if m is None:
+            print("Invalid response.", output)
+            return "format_error"
+        output = m.group(1)
+        if "Coding" in output:
+            return Label.CODING
+        elif "Math" in output:
+            return Label.MATH
+        elif "None" in output:
+            return Label.NONE
+        else:
+            print("Invalid response.", output)
+            return Label.FAILED
