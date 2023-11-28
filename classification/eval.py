@@ -23,8 +23,8 @@ def eval(args):
         #classifiers.RandomClassifier(),
         #classifiers.NgramClassifier(),
         # classifiers.LLMClassifier(model="gpt-3.5-turbo"),
-        classifiers.LLMClassifier(model="vicuna-7b-v1.5", api_base="FILLME"),
-        # classifiers.LLMClassifier(model="openchat_3.5", api_base="FILLME"),
+        # classifiers.LLMClassifier(model="vicuna-7b-v1.5", api_base="FILLME"),
+        # classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
     ]
 
     for classifier_cls in CLASSIFIERS:
@@ -43,8 +43,6 @@ def eval(args):
         # from source to label
         y_1 = [SOURCE2CAT[source] for source in data["source"].tolist()]
         y_2 = data["prediction"].tolist()
-        print(y_1)
-        print(y_2)
         print(f"F1 score: {f1_score(y_1, y_2, average='micro')}")
 
 
