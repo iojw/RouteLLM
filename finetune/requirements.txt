@@ -1,0 +1,6 @@
+fschat
+torch==2.0.1
+transformers==4.34.1
+flash-attn==2.2.3.post2
+sentencepiece
+protobuf
