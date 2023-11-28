@@ -5,13 +5,15 @@ from concurrent.futures import ThreadPoolExecutor
 from tqdm import tqdm
 import argparse
 
+from classifiers import Label
+
 SOURCE2CAT = {
-    "humaneval": "coding",
-    "gsm8k": "math",
-    "mmlu": "none",
-    "mtbench-coding": "coding",
-    "mtbench-math": "math",
-    "mtbench-writing": "none",
+    "humaneval": Label.CODING,
+    "gsm8k": Label.MATH,
+    "mmlu": Label.NONE,
+    "mtbench-coding": Label.CODING,
+    "mtbench-math": Label.MATH,
+    "mtbench-writing": Label.NONE,
 }
 
 def eval(args):
@@ -42,8 +44,8 @@ def eval(args):
                 data.loc[index_list[idx], "prediction"] = f.result()
 
         # from source to label
-        y_1 = [SOURCE2CAT[source] for source in data["source"].tolist()]
-        y_2 = data["prediction"].tolist()
+        y_1 = [SOURCE2CAT[source].value for source in data["source"].tolist()]
+        y_2 = [pred.value for pred in data["prediction"].tolist()]
         print(y_1)
         print(y_2)
         print(f"F1 score: {f1_score(y_1, y_2, average='micro')}")

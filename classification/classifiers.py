@@ -7,6 +7,15 @@ import openai
 from collections import Counter
 import math
 import samples
+from enum import Enum
+
+
+class Label(Enum):
+    CODING = 0
+    MATH = 1
+    NONE = 2
+    FAILED = 3
+
 
 class Classifier:
     @abstractmethod
@@ -22,7 +31,7 @@ class RandomClassifier(Classifier):
         return bool(random.getrandbits(1))
 
     def classify_prompt(self, prompt: str) -> bool:
-        return random.choice(["coding", "math", "none"])
+        return random.choice([Label.CODING, Label.MATH, Label.NONE])
 
 class NgramClassifier:
     def __init__(self, ngram_size=2):
@@ -144,8 +153,11 @@ Your output should be wrapped by "[[" and "]]". For example, "[[3. None]]".
             return "format_error"
         output = m.group(1)
         if "Coding" in output:
-            return "coding"
+            return Label.CODING
         elif "Math" in output:
-            return "math"
+            return Label.MATH
         elif "None" in output:
-            return "none"
+            return Label.NONE
+        else:
+            print("Invalid response.", output)
+            return Label.FAILED
