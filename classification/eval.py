@@ -27,7 +27,8 @@ def eval(args):
         #classifiers.NgramClassifier(),
         # classifiers.LLMClassifier(model="gpt-3.5-turbo"),
         # classifiers.LLMClassifier(model="vicuna-7b-v1.5", api_base="FILLME"),
-        classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
+        # classifiers.LLMClassifier(model="vicuna-13b-v1.5", api_base="FILLME"),
+        classifiers.FinetunedClassifier(model="../finetune/output/"),
     ]
 
     for classifier_cls in CLASSIFIERS:
