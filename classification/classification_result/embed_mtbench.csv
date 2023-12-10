@@ -1,0 +1,51 @@
+prompt,source,prediction
+Write a C++ program to find the nth Fibonacci number using recursion.,mtbench-coding,Label.CODING
+How many integers are in the solution of the inequality |x + 5| < 10,mtbench-math,Label.MATH
+Craft an intriguing opening paragraph for a fictional short story. The story should involve a character who wakes up one morning to find that they can time travel.,mtbench-writing,Label.NONE
+"Draft a professional email seeking your supervisor's feedback on the 'Quarterly Financial Report' you prepared. Ask specifically about the data analysis, presentation style, and the clarity of conclusions drawn. Keep the email short and to the point.",mtbench-writing,Label.NONE
+"Write a persuasive email to convince your introverted friend, who dislikes public speaking, to volunteer as a guest speaker at a local event. Use compelling arguments and address potential objections. Please be concise.",mtbench-writing,Label.NONE
+You are given two sorted lists of size m and n. Implement a function to find the kth smallest element in the union of the two lists with linear complexity.,mtbench-coding,Label.CODING
+"x+y = 4z, x*y = 4z^2, express x-y in z",mtbench-math,Label.MATH
+"A tech startup invests $8000 in software development in the first year, and then invests half of that amount in software development in the second year.
+What's the total amount the startup invested in software development over the two years?",mtbench-math,Label.MATH
+Implement a function to find the median of two sorted arrays of different sizes with O(1) space complexity and O(n) time complexity.,mtbench-coding,Label.CODING
+Develop a Python program that reads all the text files under a directory and reprompt top-5 words with the most number of occurrences.,mtbench-coding,Label.CODING
+Write a function to find the highest common ancestor (not LCA) of two nodes in a binary tree.,mtbench-coding,Label.CODING
+Implement a program to find the common elements in two arrays without using any extra data structures.,mtbench-coding,Label.CODING
+Write a function to find the majority element in a given integer array using the Boyer-Moore Voting Algorithm.,mtbench-coding,Label.CODING
+"Here is a Python function to find the length of the longest common subsequence of two input strings. Can you identify any bug in this function?
+
+```
+def longest_common_subsequence_length(str1, str2):
+    m = len(str1)
+    n = len(str2)
+
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if str1[i - 1] == str2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+
+    return dp[m][n]
+```",mtbench-coding,Label.CODING
+"Imagine you are writing a blog post comparing two popular smartphone models. Develop an outline for the blog post, including key points and subheadings to effectively compare and contrast the features, performance, and user experience of the two models. Please answer in fewer than 200 words.",mtbench-writing,Label.NONE
+"When a number is divided by 10, the remainder is 4. What is the remainder when twice the number is divided by 4?",mtbench-math,Label.MATH
+"In a survey conducted at a local high school, preferences for a new school color were measured: 58% of students liked the color blue, 45% preferred green, and 22% liked both colors. If we randomly pick a student from the school, what's the probability that they would like neither blue nor green?",mtbench-math,Label.MATH
+"The vertices of a triangle are at points (0, 0), (-1, 1), and (3, 3). What is the area of the triangle?",mtbench-math,Label.MATH
+"Describe a vivid and unique character, using strong imagery and creative language. Please answer in fewer than two paragraphs.",mtbench-writing,Label.NONE
+"Write a descriptive paragraph about a bustling marketplace, incorporating sensory details such as smells, sounds, and visual elements to create an immersive experience for the reader.",mtbench-writing,Label.NONE
+"Help me construct a catchy, yet scientifically accurate, headline for an article on the latest discovery in renewable bio-energy, while carefully handling the ethical dilemmas surrounding bio-energy sources. Propose 4 options.",mtbench-writing,Label.NONE
+"Compose an engaging travel blog post about a recent trip to Hawaii, highlighting cultural experiences and must-see attractions.",mtbench-writing,Label.NONE
+"Edit the following paragraph to correct any grammatical errors:
+She didn't remembre where is her purse, so I thinks its in the car but he's say it's on kitchen table but he are not sure, and then they asked me to looking for it, she's say, ""Can you?"", and I responds with, ""Maybe, but ain't no sure,"" and he not heard me, and, ""What?"", he asks, ""Did you found it?"".",mtbench-writing,Label.NONE
+"Some people got on a bus at the terminal. At the first bus stop, half of the people got down and 4 more people got in. Then at the second bus stop, 6 people got down and 8 more got in. If there were a total of 25 people heading to the third stop, how many people got on the bus at the terminal?",mtbench-math,Label.MATH
+"Benjamin went to a bookstore and purchased a variety of books. He bought 5 copies of a sci-fi novel, each priced at $20, 3 copies of a history book priced at $30 each, and 2 copies of a philosophy book for $45 each.
+What was the total cost of his purchases?",mtbench-math,Label.MATH
+"Write a simple website in HTML. When a user clicks the button, it shows a random joke from a list of 4 jokes.",mtbench-coding,Label.CODING
+"When rolling two dice, what is the probability that you roll a total number that is at least 3?",mtbench-math,Label.CODING
+A binary tree is full if all of its vertices have either zero or two children. Let B_n denote the number of full binary trees with n vertices. Implement a function to find B_n.,mtbench-coding,Label.CODING
+Could you write a captivating short story beginning with the sentence: The old abandoned house at the end of the street held a secret that no one had ever discovered.,mtbench-writing,Label.NONE
+"Given that f(x) = 4x^3 - 9x - 14, find the value of f(2).",mtbench-math,Label.MATH
