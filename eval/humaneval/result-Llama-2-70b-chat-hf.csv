@@ -1,4 +1,4 @@
-,pid,pass@1,pass@10,model_name
+,prompt_id,pass@1,pass@10,model_name
 0,humaneval-0,True,True,Llama-2-70b-chat-hf
 1,humaneval-1,False,False,Llama-2-70b-chat-hf
 2,humaneval-2,True,True,Llama-2-70b-chat-hf

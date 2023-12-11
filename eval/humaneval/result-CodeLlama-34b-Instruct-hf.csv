@@ -1,4 +1,4 @@
-,pid,pass@1,pass@10,model_name
+,prompt_id,pass@1,pass@10,model_name
 0,humaneval-0,True,True,CodeLlama-34b-Instruct-hf
 1,humaneval-1,False,True,CodeLlama-34b-Instruct-hf
 2,humaneval-2,True,True,CodeLlama-34b-Instruct-hf
