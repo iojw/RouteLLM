@@ -7,7 +7,7 @@ PERFORMANCE1 = {
     "Embedding": 1.0,
     "Zero-shot\nLlama2-7B": 0.296,
     "Finetuned\nLlama2-7B": 0.946,
-    "Zero-shot\nGPT-3.5-Turbo": 0.99,
+    "Zero-shot\nGPT-3.5": 0.99,
 }
 
 PERFORMANCE2 = {
@@ -25,14 +25,15 @@ def draw_performance(performance, title, color):
     plt.bar(performance.keys(), performance.values(), color=color)
     # plt.axhline(y=0.33, color="black", linestyle="--")
     for k, v in performance.items():
-        plt.text(k, v + 0.01, f"{v:.2f}", ha="center", fontsize=15)
+        plt.text(k, v + 0.01, f"{v:.2f}", ha="center", fontsize=20)
     plt.ylim(0, 1.1)
     plt.xticks(fontsize=18)
-    plt.ylabel("F1 score", fontsize=15)
+    plt.yticks(fontsize=20)
+    plt.ylabel("F1 score", fontsize=20)
     plt.tight_layout()
     plt.savefig(f"{title}.png", dpi=600)
 
 
 if __name__ == "__main__":
-    draw_performance(PERFORMANCE1, "performance1", color="#fdb515ff")
-    draw_performance(PERFORMANCE2, "performance2", color="#30a2ffff")
+    draw_performance(PERFORMANCE1, "router_academic", color="#fdb515ff")
+    draw_performance(PERFORMANCE2, "router_chat", color="#30a2ffff")
