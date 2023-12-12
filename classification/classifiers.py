@@ -39,9 +39,11 @@ class NgramClassifier:
         self.ngram_size = ngram_size
         self.code_ngrams = Counter()
         self.language_ngrams = Counter()
+        self.math_ngrams = Counter()
         self.total_code_ngrams = 0
         self.total_language_ngrams = 0
-        self.train(samples.code_samples, samples.language_samples)
+        self.total_math_ngrams = 0
+        self.train(samples.code_samples, samples.language_samples, samples.math_samples)
 
     def _preprocess(self, text):
         return text.lower().strip()
@@ -53,7 +55,7 @@ class NgramClassifier:
             ngrams.append(text[i:i + self.ngram_size])
         return ngrams
 
-    def train(self, code_samples, language_samples):
+    def train(self, code_samples, language_samples, math_samples):
         for sample in code_samples:
             ngrams = self._extract_ngrams(sample)
             self.code_ngrams.update(ngrams)
@@ -63,27 +65,50 @@ class NgramClassifier:
             ngrams = self._extract_ngrams(sample)
             self.language_ngrams.update(ngrams)
             self.total_language_ngrams += len(ngrams)
+            
+        for sample in math_samples:
+            ngrams = self._extract_ngrams(sample)
+            self.math_ngrams.update(ngrams)
+            self.total_math_ngrams += len(ngrams)
 
-    def _calculate_ngram_probability(self, ngram, is_code):
-        if is_code:
+    def _calculate_ngram_probability(self, ngram, check_type):
+        if check_type == 'code':
             return (self.code_ngrams[ngram] + 1) / (self.total_code_ngrams + 1)
-        else:
+        elif check_type == 'language':
             return (self.language_ngrams[ngram] + 1) / (self.total_language_ngrams + 1)
+        elif check_type == 'math':
+            return (self.math_ngrams[ngram] + 1) / (self.total_math_ngrams + 1)
 
     def is_code_prompt(self, prompt):
         ngrams = self._extract_ngrams(prompt)
         code_prob = 0
         lang_prob = 0
+        math_prob = 0
 
         for ngram in ngrams:
-            code_prob += math.log(self._calculate_ngram_probability(ngram, True))
-            lang_prob += math.log(self._calculate_ngram_probability(ngram, False))
+            code_prob += math.log(self._calculate_ngram_probability(ngram, check_type='code'))
+            lang_prob += math.log(self._calculate_ngram_probability(ngram, check_type='language'))
+            math_prob += math.log(self._calculate_ngram_probability(ngram, check_type='math'))
         
         return code_prob > lang_prob
 
     def classify_prompt(self, prompt):
-        raise NotImplementedError("NgramClassifier does not support classify_prompt")
+        ngrams = self._extract_ngrams(prompt)
+        code_prob = 0
+        lang_prob = 0
+        math_prob = 0
 
+        for ngram in ngrams:
+            code_prob += math.log(self._calculate_ngram_probability(ngram, check_type='code'))
+            lang_prob += math.log(self._calculate_ngram_probability(ngram, check_type='language'))
+            math_prob += math.log(self._calculate_ngram_probability(ngram, check_type='math'))
+            
+        if code_prob > lang_prob and code_prob > math_prob:
+            return Label.CODING
+        elif math_prob > code_prob and math_prob > lang_prob:
+            return Label.MATH
+        else:
+            return Label.NONE
 class LLMClassifier(Classifier):
     def __init__(self, model=None, api_base=None, api_key=None):
         assert model is not None, "Please specify a model name"

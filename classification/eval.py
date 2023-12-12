@@ -25,9 +25,9 @@ def eval(args):
 
     # List of classifiers to use
     CLASSIFIERS = [
-        #classifiers.RandomClassifier(),
-        #classifiers.NgramClassifier(),
-        #classifiers.LLMClassifier(model="gpt-3.5-turbo"),
+        # classifiers.RandomClassifier(),
+        classifiers.NgramClassifier(),
+        # classifiers.LLMClassifier(model="gpt-3.5-turbo"),
     ]
 
     for classifier_cls in CLASSIFIERS:
