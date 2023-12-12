@@ -1,0 +1,1777 @@
+,prompt,source,prompt_id,prediction
+0,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following factors is associated with a decreased risk of Alzheimer's?
+A. Being African or Hispanic American
+B. Eating fish
+C. A lower level of education
+D. Being married
+Answer:",mmlu,mmlu-0,Label.NONE
+1,"The following are multiple choice questions (with answers) about human aging.
+
+The docility hypothesis is that
+A. Those with low capabilities are more vulnerable to environmental demands
+B. Those who experience high environmental demands become more docile
+C. Those who experience high environmental demands become less docile
+D. Those with less capability are less vulnerable to environmental demands
+Answer:",mmlu,mmlu-1,Label.NONE
+2,"The following are multiple choice questions (with answers) about human aging.
+
+Normal memory seems to be improved by
+A. Aerobic exercise
+B. Taking acetylcholine
+C. Taking gingko
+D. Increasing social contacts
+Answer:",mmlu,mmlu-2,Label.NONE
+3,"The following are multiple choice questions (with answers) about human aging.
+
+The perspective that development is embedded in history means that
+A. Change can always occur regardless of age
+B. Sociocultural conditions must always be considered
+C. Development in any particular areas (e.g., social) is tied to development in other areas (e.g., cognitive)
+D. Some characteristics change with age while others do not
+Answer:",mmlu,mmlu-3,Label.NONE
+4,"The following are multiple choice questions (with answers) about human aging.
+
+The answer ""both play an important role"" is clearly applicable to the question of
+A. Nature vs. nurture
+B. Mechanistic vs organismic
+C. Continuity vs. discontinuity
+D. All of these questions
+Answer:",mmlu,mmlu-4,Label.NONE
+5,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following does NOT usually occur to the lens of the eye as one grows older?
+A. It becomes thicker
+B. It yellows
+C. It becomes clouded
+D. It fills with fluid
+Answer:",mmlu,mmlu-5,Label.NONE
+6,"The following are multiple choice questions (with answers) about human aging.
+
+The houses of the future may allow you to operate virtually everything in the house from a central terminal; such a house is already in production and is referred to as
+A. Technohouse
+B. Compuhouse
+C. Futurehouse
+D. Smarthouse
+Answer:",mmlu,mmlu-6,Label.NONE
+7,"The following are multiple choice questions (with answers) about human aging.
+
+The reaction time difference between younger and older adults is reduced when older adults
+A. Practice regular aerobic exercise
+B. Lift weights on a regular schedule
+C. Consume large quantities of vitamins
+D. Practice Tai chi
+Answer:",mmlu,mmlu-7,Label.NONE
+8,"The following are multiple choice questions (with answers) about human aging.
+
+A major difference between programmed and unprogrammed theories of senescence is that programmed theories
+A. Attribute senescence only to environmental factors
+B. Are far too difficulty to test
+C. Claim that senescence follows a predetermined plan
+D. Rely too heavily on computer models
+Answer:",mmlu,mmlu-8,Label.NONE
+9,"The following are multiple choice questions (with answers) about human aging.
+
+One reason that older adults show high levels of optimism is that
+A. Many pessimists die at a younger age
+B. They do not really know what is going on
+C. This may be a warning sign for dementia
+D. Our measures have low validity
+Answer:",mmlu,mmlu-9,Label.NONE
+10,"The following are multiple choice questions (with answers) about human aging.
+
+Bu is often late for appointments but says it's because she had more important things on her mind. This is an example of which coping strategy?
+A. Immunization
+B. Accommodation
+C. Avoidance
+D. Assimilation
+Answer:",mmlu,mmlu-10,Label.NONE
+11,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is most strongly associated with loss of bone density?
+A. Genetic factors
+B. Lifestyle factors like not exercising
+C. Hormonal factors such as loss of estrogen
+D. Cohort factors
+Answer:",mmlu,mmlu-11,Label.NONE
+12,"The following are multiple choice questions (with answers) about human aging.
+
+That super sweet iced tea that your grandmother gives you might be that way because she
+A. Has lost a lot of sweet taste buds and cannot taste sweetness as well anymore
+B. Is a member of that cohort that really enjoys sweets
+C. Is trying to get you to be a little sweeter than you have been in the past
+D. Has experienced damage in her parietal lobe where sweet sensations are directed
+Answer:",mmlu,mmlu-12,Label.NONE
+13,"The following are multiple choice questions (with answers) about human aging.
+
+A shortage of these two vitamins can produce symptoms that mimic dementia:
+A. A and C
+B. B6 and B12
+C. B6 and D
+D. B12 and E
+Answer:",mmlu,mmlu-13,Label.NONE
+14,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is one of McAdam's levels of personality?
+A. Control
+B. Identity
+C. Generativity
+D. Assimilation
+Answer:",mmlu,mmlu-14,Label.NONE
+15,"The following are multiple choice questions (with answers) about human aging.
+
+In this chapter's Senior View, Dr. Donham told us that mental stimulation, exercise, diet, and what other factor is important for long life?
+A. Moderate amounts of alcohol
+B. Social support
+C. Good genes
+D. Avoiding stress
+Answer:",mmlu,mmlu-15,Label.NONE
+16,"The following are multiple choice questions (with answers) about human aging.
+
+Surveys of older adults who are living together show that they tend to view cohabitation as
+A. A first step toward eventual marriage
+B. An alternative to marriage
+C. A way to save on expenses
+D. Their swan song
+Answer:",mmlu,mmlu-16,Label.NONE
+17,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults may be more attached to a place than younger adults because
+A. That place holds many memories
+B. It's much harder to move when you're older
+C. Young adults pay less attention to place then do older adults
+D. That place represents transcendence
+Answer:",mmlu,mmlu-17,Label.NONE
+18,"The following are multiple choice questions (with answers) about human aging.
+
+The Hayflick number for human cells is
+A. Unknown
+B. Between 45 and 55
+C. Less than 30
+D. More than 60
+Answer:",mmlu,mmlu-18,Label.NONE
+19,"The following are multiple choice questions (with answers) about human aging.
+
+High levels of self-care behaviors have been associated with high levels of
+A. Neuroticism
+B. Extraversion
+C. Agreeableness
+D. Secondary control
+Answer:",mmlu,mmlu-19,Label.NONE
+20,"The following are multiple choice questions (with answers) about human aging.
+
+Research has offered some longitudinal as well as cross sectional support for the theory put forth by
+A. Peck
+B. Foos
+C. Levenson
+D. Erikson
+Answer:",mmlu,mmlu-20,Label.NONE
+21,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is more likely to be a cohort, rather than an age, difference?
+A. A higher proportion of older women have completed menopause
+B. A smaller proportion of older women report dreams about sex
+C. A higher proportion of older men are bald
+D. A higher proportion of older men and women are victims of cancer
+Answer:",mmlu,mmlu-21,Label.NONE
+22,"The following are multiple choice questions (with answers) about human aging.
+
+Fear of aging has been associated with high levels of
+A. Introversion
+B. Neuroticism
+C. Rigidity
+D. Mid-life crisis
+Answer:",mmlu,mmlu-22,Label.NONE
+23,"The following are multiple choice questions (with answers) about human aging.
+
+In which dementia are cognitive symptoms less likely?
+A. Parkinson's
+B. Pick's
+C. Huntington's
+D. NeuroAIDS
+Answer:",mmlu,mmlu-23,Label.NONE
+24,"The following are multiple choice questions (with answers) about human aging.
+
+In this chapter's Senior View, Dr. Shealy advises you to
+A. Stay in school
+B. Eat the right foods
+C. Get plenty of exercise
+D. Find a high paying job
+Answer:",mmlu,mmlu-24,Label.NONE
+25,"The following are multiple choice questions (with answers) about human aging.
+
+When your sister Patricia was feeling depressed, you comforted her and reminisced about happier times. You provided which type of social support?
+A. Emotional
+B. Instrumental
+C. Informational
+D. Friendly
+Answer:",mmlu,mmlu-25,Label.NONE
+26,"The following are multiple choice questions (with answers) about human aging.
+
+Hearing loss occurs more frequently for
+A. Men than women
+B. Women than men
+C. People who already have some loss of vision
+D. People who are obese
+Answer:",mmlu,mmlu-26,Label.NONE
+27,"The following are multiple choice questions (with answers) about human aging.
+
+Continued stress is damaging to health and longevity because it leads to
+A. Over exercising which causes physical damage
+B. Suppression of the immune system
+C. Less eating and, in many cases, severe eating disorders
+D. Risky behaviors such as speeding and not using a seat belt
+Answer:",mmlu,mmlu-27,Label.NONE
+28,"The following are multiple choice questions (with answers) about human aging.
+
+One difference that seems to be mostly cohort rather than age is the difference in ____ for different age groups
+A. Coping strategies
+B. Work productivity
+C. Rates of dementia
+D. Personality traits
+Answer:",mmlu,mmlu-28,Label.NONE
+29,"The following are multiple choice questions (with answers) about human aging.
+
+According to Tat Kleckley of this chapter's Senior View, the most important part of the healing process for those who are bereaved is to
+A. Stay away from other people for a while
+B. Get out and be active
+C. Talk about your loss
+D. Make new friends who don't know about your loss
+Answer:",mmlu,mmlu-29,Label.NONE
+30,"The following are multiple choice questions (with answers) about human aging.
+
+Social support is most likely to have a positive influence on health and well being when it is
+A. Very emotional
+B. Perceived as support
+C. Unexpected
+D. External rather than internal
+Answer:",mmlu,mmlu-30,Label.NONE
+31,"The following are multiple choice questions (with answers) about human aging.
+
+Free radicals are produced by
+A. Normal metabolism
+B. Excess consumption of Vitamins A and C
+C. Lack of sunlight
+D. A weakened immune system
+Answer:",mmlu,mmlu-31,Label.NONE
+32,"The following are multiple choice questions (with answers) about human aging.
+
+Prejudice or bias against older adults is referred to as
+A. Ageism
+B. Oldism
+C. Age bigotry
+D. Senilism
+Answer:",mmlu,mmlu-32,Label.NONE
+33,"The following are multiple choice questions (with answers) about human aging.
+
+The program that takes over care for those with 6 or fewer months to live, attempts to keep them at home, provides pain relief, and ends all life-prolonging technologies is called
+A. Euthanasia
+B. Cryonics
+C. Medicare
+D. Hospice
+Answer:",mmlu,mmlu-33,Label.NONE
+34,"The following are multiple choice questions (with answers) about human aging.
+
+Loss of smell for adults 80 and older is
+A. Very infrequent (less than 15%)
+B. Very frequent (more than 75%)
+C. Infrequent (less than 40%)
+D. Frequent (close to 50%)
+Answer:",mmlu,mmlu-34,Label.NONE
+35,"The following are multiple choice questions (with answers) about human aging.
+
+Activation of a class of genes called sirtuins may help to
+A. Prevent some diseases
+B. Ward off dementias
+C. Increase memory and intelligence
+D. Produce emotional stability
+Answer:",mmlu,mmlu-35,Label.NONE
+36,"The following are multiple choice questions (with answers) about human aging.
+
+Elder abuse most frequently comes from the older adult's
+A. Spouse
+B. Children
+C. Grandchildren
+D. Neighbors
+Answer:",mmlu,mmlu-36,Label.NONE
+37,"The following are multiple choice questions (with answers) about human aging.
+
+Projective tests generally ___ than objective tests of personality.
+A. Have higher reliability
+B. Are more visual
+C. Are more valid
+D. Provide more information
+Answer:",mmlu,mmlu-37,Label.NONE
+38,"The following are multiple choice questions (with answers) about human aging.
+
+Cells in the eye that respond to low levels of illumination are called
+A. Rods
+B. Cones
+C. Retinal cells
+D. Nocturnal detectors
+Answer:",mmlu,mmlu-38,Label.NONE
+39,"The following are multiple choice questions (with answers) about human aging.
+
+Some work on age stereotypes suggests that
+A. Positive ones are stronger
+B. Negative ones are stronger
+C. They never last very long
+D. They are very rare
+Answer:",mmlu,mmlu-39,Label.NONE
+40,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following could very well be a cohort difference rather than a change that occurs with age?
+A. Differences in weight
+B. Shrinkage of the thymus gland
+C. Enlargement of the heart
+D. Increasing size of nose and ears
+Answer:",mmlu,mmlu-40,Label.NONE
+41,"The following are multiple choice questions (with answers) about human aging.
+
+The major question concerning aging and personality is:
+A. Do older adults still have personalities?
+B. Does personality change with age?
+C. Does personality decline as we grow older?
+D. Does personality increase of decrease with age?
+Answer:",mmlu,mmlu-41,Label.NONE
+42,"The following are multiple choice questions (with answers) about human aging.
+
+A researcher who wants to examine both age and cohort differences is advised to use a _____ design.
+A. Cross-sectional
+B. Cross-sequential
+C. Correlational
+D. Quasi-experimental
+Answer:",mmlu,mmlu-42,Label.NONE
+43,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is NOT one of the most rewarding aspects of being a grandparent as reported by grandparents?
+A. Feelings of immortality
+B. Spoiling the grandchildren
+C. Having others to wait on you
+D. Remembering when they were grandchildren
+Answer:",mmlu,mmlu-43,Label.NONE
+44,"The following are multiple choice questions (with answers) about human aging.
+
+Of the following animals, which has the longest life span by current measures?
+A. Gorilla
+B. Blue whale
+C. Dog
+D. Queen honey bee
+Answer:",mmlu,mmlu-44,Label.NONE
+45,"The following are multiple choice questions (with answers) about human aging.
+
+One advantage of an expected death over an unexpected death is that
+A. One can use up some grief before the actual loss
+B. One can make funeral and estate plans with the loved one
+C. One can find ways to avoid having the same death for themselves
+D. One can assist the terminally ill person in speeding their death
+Answer:",mmlu,mmlu-45,Label.NONE
+46,"The following are multiple choice questions (with answers) about human aging.
+
+Changes in the reproductive system are more _____ for men but not for women
+A. Mechanistic
+B. Continuous
+C. Organismic
+D. Nurturant
+Answer:",mmlu,mmlu-46,Label.NONE
+47,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following hormones has not yet been claimed to ward off senescence?
+A. DHEA
+B. Human growth hormone
+C. Melatonin
+D. Viasterol
+Answer:",mmlu,mmlu-47,Label.NONE
+48,"The following are multiple choice questions (with answers) about human aging.
+
+The majority of older widows live
+A. Alone
+B. With children
+C. With a friend
+D. In an institution
+Answer:",mmlu,mmlu-48,Label.NONE
+49,"The following are multiple choice questions (with answers) about human aging.
+
+Centenarians are people who
+A. Were born before the centennial
+B. Study old age and older adults
+C. Are 100 or more years old
+D. Have not yet reached old age
+Answer:",mmlu,mmlu-49,Label.NONE
+50,"The following are multiple choice questions (with answers) about human aging.
+
+Quantitative analyses of TV shows have shown that
+A. Older adults are almost always portrayed in a negative way
+B. The more positive portrayals occur during commercials
+C. The proportion of older men is particularly low
+D. The proportion of older women is particularly low
+Answer:",mmlu,mmlu-50,Label.NONE
+51,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following groups of Americans have the lowest rate of alcohol abuse?
+A. African-American
+B. White
+C. Native-American
+D. Asian-American
+Answer:",mmlu,mmlu-51,Label.NONE
+52,"The following are multiple choice questions (with answers) about human aging.
+
+If you believe that changes occur slowly and steadily throughout life, you would be holding the _____ side of this view of development.
+A. Mechanistic
+B. Organismic
+C. Continuity
+D. Stability
+Answer:",mmlu,mmlu-52,Label.NONE
+53,"The following are multiple choice questions (with answers) about human aging.
+
+All other things being equal, which of the following persons is likely to live the longest?
+A. A black man
+B. A white man
+C. A black woman
+D. A white woman
+Answer:",mmlu,mmlu-53,Label.NONE
+54,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following age differences could be, in part, a cohort effect? Differences in
+A. Depression
+B. Alcoholism
+C. Dementia
+D. Suicide
+Answer:",mmlu,mmlu-54,Label.NONE
+55,"The following are multiple choice questions (with answers) about human aging.
+
+Clifford and Lucia Pauling, in Senior View, told us that physical changes
+A. Are rapid and frightening
+B. Can be offset by meditation
+C. Take a long time
+D. Should not be discussed in public
+Answer:",mmlu,mmlu-55,Label.NONE
+56,"The following are multiple choice questions (with answers) about human aging.
+
+The biggest and most dangerous changes in the cardiovascular system take place in the
+A. Heart
+B. Blood vessels
+C. Red blood cells
+D. Plasma
+Answer:",mmlu,mmlu-56,Label.NONE
+57,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults generally perform very well when their _____ memory is tested.
+A. Episodic
+B. Working
+C. Retrospective
+D. Semantic
+Answer:",mmlu,mmlu-57,Label.NONE
+58,"The following are multiple choice questions (with answers) about human aging.
+
+With respect to marital satisfaction, most long lasting marriages
+A. Show high satisfaction through all the years of marriage
+B. Show high satisfaction that steadily declines as the years pass
+C. Show lower levels during the years when children are present
+D. Show ups and downs throughout the marriage
+Answer:",mmlu,mmlu-58,Label.NONE
+59,"The following are multiple choice questions (with answers) about human aging.
+
+Theories
+A. Are not very important in aging research
+B. Attempt to explain findings and guide future research
+C. Have never been adequately tested
+D. Have been around for a long time but have only recently been tested
+Answer:",mmlu,mmlu-59,Label.NONE
+60,"The following are multiple choice questions (with answers) about human aging.
+
+The least favored theory of senescence among researchers is the _____ theory
+A. Free radical
+B. Biological clock
+C. Wear and tear
+D. Garbage accumulation
+Answer:",mmlu,mmlu-60,Label.NONE
+61,"The following are multiple choice questions (with answers) about human aging.
+
+A researcher finds that age is negatively correlated with cigarette smoking; this means that
+A. Older adults experience more negative effects from smoking that do younger adults
+B. Older adults smoke more than younger adults
+C. Older adults smoke less than younger adults
+D. Older and younger adults smoke about the same number of cigarettes and both experience negative effects
+Answer:",mmlu,mmlu-61,Label.NONE
+62,"The following are multiple choice questions (with answers) about human aging.
+
+When a researcher takes part in the situation he or she is observing, he or she is said to be a(n)
+A. Active observer
+B. Participant observer
+C. Indiscreet observer
+D. Meddling observer
+Answer:",mmlu,mmlu-62,Label.NONE
+63,"The following are multiple choice questions (with answers) about human aging.
+
+The term ""work-family conflict"" for middle-aged adults can occur when they must
+A. Care for an ailing parent while continuing to work
+B. Work a high stress job while their children are at home
+C. Pay for nursing home care by sacrificing their own care
+D. Serving as an executor of their parent's estate while still working full time
+Answer:",mmlu,mmlu-63,Label.NONE
+64,"The following are multiple choice questions (with answers) about human aging.
+
+Do traits change with age?
+A. No
+B. They change a little
+C. Only for women
+D. They change quite a lot
+Answer:",mmlu,mmlu-64,Label.NONE
+65,"The following are multiple choice questions (with answers) about human aging.
+
+The cause of Alzheimer's appears to be
+A. Mostly environmental
+B. Aluminum
+C. Mostly genetic
+D. Apo-E 4
+Answer:",mmlu,mmlu-65,Label.NONE
+66,"The following are multiple choice questions (with answers) about human aging.
+
+Older married men have been found to have
+A. Higher levels of positive emotions
+B. Lower levels of positive emotions
+C. Higher levels of negative emotions
+D. Lower levels of negative emotions
+Answer:",mmlu,mmlu-66,Label.NONE
+67,"The following are multiple choice questions (with answers) about human aging.
+
+Within the United States, which location has the longest life expectancy?
+A. California
+B. Florida
+C. Alaska
+D. Hawaii
+Answer:",mmlu,mmlu-67,Label.NONE
+68,"The following are multiple choice questions (with answers) about human aging.
+
+The largest proportion of older adults living alone reside in
+A. Hawaii
+B. Washington, DC
+C. Florida
+D. California
+Answer:",mmlu,mmlu-68,Label.NONE
+69,"The following are multiple choice questions (with answers) about human aging.
+
+Which level of personality description appears to show the most change with age?
+A. Traits
+B. Personal concerns
+C. Coping strategies
+D. Identity
+Answer:",mmlu,mmlu-69,Label.NONE
+70,"The following are multiple choice questions (with answers) about human aging.
+
+The positive relationship between religion and physical health is NOT thought to be due to
+A. Social support derived from a religious community
+B. The rules of some religions which forbid unhealthy behaviors
+C. The stress reducing effects of prayerful meditation
+D. The benefits of knowing that others are praying for you
+Answer:",mmlu,mmlu-70,Label.NONE
+71,"The following are multiple choice questions (with answers) about human aging.
+
+Human factors examines the performance of different tasks by examining
+A. The factors that influence performance
+B. The interaction between human and environment
+C. The human side of the equation
+D. The effects of environmental changes on humans
+Answer:",mmlu,mmlu-71,Label.NONE
+72,"The following are multiple choice questions (with answers) about human aging.
+
+Prospective memory refers to memory
+A. For some recent event
+B. For something that happened a long time ago
+C. To do something in the future
+D. For the context and source of remembered information
+Answer:",mmlu,mmlu-72,Label.NONE
+73,"The following are multiple choice questions (with answers) about human aging.
+
+The total number of people who have some disorder divided by the total number of people gives you the ____ rate.
+A. Prevalence
+B. Incidence
+C. Incipient
+D. Diseased
+Answer:",mmlu,mmlu-73,Label.NONE
+74,"The following are multiple choice questions (with answers) about human aging.
+
+Remarriages are
+A. More frequent for woman than men
+B. Typically more successful
+C. Typically less successful
+D. Most common among those who have never been married before
+Answer:",mmlu,mmlu-74,Label.NONE
+75,"The following are multiple choice questions (with answers) about human aging.
+
+With respect to job training, younger workers
+A. Receive more opportunities than older workers
+B. Perform better on the job than trained older workers
+C. Always learn faster than older workers
+D. Prefer to have classes by themselves
+Answer:",mmlu,mmlu-75,Label.NONE
+76,"The following are multiple choice questions (with answers) about human aging.
+
+About how many grieving individuals seem to require some professional help?
+A. Less than 10%
+B. About 25%
+C. Nearly half
+D. More than 50%
+Answer:",mmlu,mmlu-76,Label.NONE
+77,"The following are multiple choice questions (with answers) about human aging.
+
+People with which of the following forms of control are least likely to have accessibility problems where they live?
+A. External
+B. Internal
+C. Primary
+D. Total
+Answer:",mmlu,mmlu-77,Label.NONE
+78,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following has been found to improve balance for older adults?
+A. Tai chi
+B. Aerobic exercise
+C. Weight lifting
+D. Walking briskly
+Answer:",mmlu,mmlu-78,Label.NONE
+79,"The following are multiple choice questions (with answers) about human aging.
+
+The most frequent chronic condition for older adults is
+A. Hypertension
+B. Arthritis
+C. Diabetes
+D. Cataracts
+Answer:",mmlu,mmlu-79,Label.NONE
+80,"The following are multiple choice questions (with answers) about human aging.
+
+Hypokinesia refers to
+A. Severe obesity
+B. Loss of muscle strength and bone density
+C. Increased sensitivity to stress
+D. Social isolation and lack of support
+Answer:",mmlu,mmlu-80,Label.NONE
+81,"The following are multiple choice questions (with answers) about human aging.
+
+What percentage of older adults report feeling very or often lonely?
+A. 10%
+B. 25%
+C. 50%
+D. 75%
+Answer:",mmlu,mmlu-81,Label.NONE
+82,"The following are multiple choice questions (with answers) about human aging.
+
+An example of a discontinuous change over the adult years is the change in
+A. Personality
+B. Working memory
+C. Female hormone levels
+D. Male sexuality
+Answer:",mmlu,mmlu-82,Label.NONE
+83,"The following are multiple choice questions (with answers) about human aging.
+
+Which leg of the three-legged stool do most retirees have
+A. Pension
+B. Social security
+C. Savings
+D. Assets
+Answer:",mmlu,mmlu-83,Label.NONE
+84,"The following are multiple choice questions (with answers) about human aging.
+
+One of the most important points made in this chapter is that physical changes
+A. Occur for everyone
+B. Occur more for some and less for others and, within the same person, more for some systems and less for others
+C. Usually occur for very old people but not for very young people
+D. Can be totally avoided if one learns enough about gerontology
+Answer:",mmlu,mmlu-84,Label.NONE
+85,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following forms of dementia has the highest prevalence rate?
+A. Alzheimer's
+B. Vascular
+C. Parkinson's
+D. Fronto-temporal lobe
+Answer:",mmlu,mmlu-85,Label.NONE
+86,"The following are multiple choice questions (with answers) about human aging.
+
+High levels of social support are strongly associated with
+A. Longevity
+B. Internal control
+C. Culture
+D. Education
+Answer:",mmlu,mmlu-86,Label.NONE
+87,"The following are multiple choice questions (with answers) about human aging.
+
+The term ""cohort"" refers to
+A. An individual's chronological age
+B. A generation of people who lived through major events
+C. A person's gender
+D. A group of people living in the same culture
+Answer:",mmlu,mmlu-87,Label.NONE
+88,"The following are multiple choice questions (with answers) about human aging.
+
+Middle-aged adults appear to be more ____ than older or younger adults
+A. Generative
+B. Neurotic
+C. Agreeable
+D. Certain
+Answer:",mmlu,mmlu-88,Label.NONE
+89,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following improves attitudes toward aging and older adults?
+A. Staying away from older adults
+B. Education about older adults
+C. Travelling to older communities
+D. Watching the portrayals of older adults in movies and on TV
+Answer:",mmlu,mmlu-89,Label.NONE
+90,"The following are multiple choice questions (with answers) about human aging.
+
+A problem for immune system theories of senescence is
+A. Determining what first causes the senescence in the immune system
+B. Auto-immune disorders are far too rare
+C. That the immune system does not decline with age
+D. The lack of information about senescence in general
+Answer:",mmlu,mmlu-90,Label.NONE
+91,"The following are multiple choice questions (with answers) about human aging.
+
+Those more likely to experience depression after a loss are those who
+A. Are young survivors
+B. Have not previously experienced depression
+C. Have been married more than 40 years
+D. Are in poor health themselves
+Answer:",mmlu,mmlu-91,Label.NONE
+92,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following appears to lower bad cholesterol?
+A. Vitamin D
+B. Niacin
+C. Thiamine
+D. Riboflavin
+Answer:",mmlu,mmlu-92,Label.NONE
+93,"The following are multiple choice questions (with answers) about human aging.
+
+Most people who have used physician assisted suicide have had
+A. Alzheimer's
+B. Health insurance
+C. No family
+D. Clinical depression
+Answer:",mmlu,mmlu-93,Label.NONE
+94,"The following are multiple choice questions (with answers) about human aging.
+
+A researcher who is interested in the differences between two or more groups of people is most likely to use which of the following approaches?
+A. Quasi-experimental
+B. Longitudinal
+C. Correlational
+D. Cross-sequential
+Answer:",mmlu,mmlu-94,Label.NONE
+95,"The following are multiple choice questions (with answers) about human aging.
+
+Being in bright light during the later parts of the day seems to
+A. Restore normal circadian rhythm
+B. Increase insomnia
+C. Restore deep sleep
+D. Have no real influence on sleep or dreams
+Answer:",mmlu,mmlu-95,Label.NONE
+96,"The following are multiple choice questions (with answers) about human aging.
+
+A major reason for studying human aging is that
+A. We are all growing older
+B. The number and proportion of older adults is increasing
+C. More job opportunities are available for those with some knowledge of aging
+D. All of the above
+Answer:",mmlu,mmlu-96,Label.NONE
+97,"The following are multiple choice questions (with answers) about human aging.
+
+The model of social support that says that those who are close to you now are likely to be close for the rest of your days is called the ____ model
+A. Consistency
+B. Convoy
+C. Attachment
+D. Train
+Answer:",mmlu,mmlu-97,Label.NONE
+98,"The following are multiple choice questions (with answers) about human aging.
+
+When older and younger workers have lost their jobs, older workers typically
+A. Find a job quicker because of their greater experience
+B. Take longer to find a new job
+C. Retire rather than search for a new job
+D. Sue the company using the ADEA
+Answer:",mmlu,mmlu-98,Label.NONE
+99,"The following are multiple choice questions (with answers) about human aging.
+
+Our social network refers to
+A. Everyone we know
+B. Those who are closest to us
+C. Those who we have not yet met
+D. Family members
+Answer:",mmlu,mmlu-99,Label.NONE
+100,"The following are multiple choice questions (with answers) about human aging.
+
+Those who survive the loss of another are called the
+A. Survivors
+B. Grieving
+C. Bereaved
+D. Family and friends
+Answer:",mmlu,mmlu-100,Label.NONE
+101,"The following are multiple choice questions (with answers) about human aging.
+
+Financial adjustment to retirement has been most difficult for
+A. Married couples
+B. Single men
+C. Single women
+D. Older adults
+Answer:",mmlu,mmlu-101,Label.NONE
+102,"The following are multiple choice questions (with answers) about human aging.
+
+Socioemotional selectivity theory says that older adults have smaller social networks because they
+A. Are more concerned with those closest to them
+B. Select new network members based on emotional factors
+C. Can no longer get out to select new network members
+D. Are too emotionally involved to spend time with others
+Answer:",mmlu,mmlu-102,Label.NONE
+103,"The following are multiple choice questions (with answers) about human aging.
+
+The gender gap is likely to be associated with male/female differences in
+A. Hormones
+B. Risky behaviors and occupations
+C. Proportion who smoke
+D. All of the above
+Answer:",mmlu,mmlu-103,Label.NONE
+104,"The following are multiple choice questions (with answers) about human aging.
+
+Those cells that build bone are called
+A. Osteoblasts
+B. Osteoclasts
+C. Osteostructs
+D. Osteopori
+Answer:",mmlu,mmlu-104,Label.NONE
+105,"The following are multiple choice questions (with answers) about human aging.
+
+An increase in neuroticism later in life is a strong predictor of
+A. Mortality
+B. Loss of social support
+C. Cognitive decline
+D. Independence
+Answer:",mmlu,mmlu-105,Label.NONE
+106,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following countries has the longest life expectancy?
+A. U. S. A.
+B. Sweden
+C. Japan
+D. Saudi Arabia
+Answer:",mmlu,mmlu-106,Label.NONE
+107,"The following are multiple choice questions (with answers) about human aging.
+
+Which type of reaction time results in the biggest age differences?
+A. Simple
+B. Choice
+C. Complex
+D. Elaborate
+Answer:",mmlu,mmlu-107,Label.NONE
+108,"The following are multiple choice questions (with answers) about human aging.
+
+Gary says he won $1000 in the lottery because he really knows how to pick those numbers. Gary would be said to have a strong ____ locus of control
+A. External, powerful others
+B. Internal
+C. External, chance
+D. Secondary
+Answer:",mmlu,mmlu-108,Label.NONE
+109,"The following are multiple choice questions (with answers) about human aging.
+
+The advanced directive where one specifies the types of medical intervention that are and are not desired is called a
+A. Living will
+B. DNH
+C. DNR
+D. Durable power of attorney
+Answer:",mmlu,mmlu-109,Label.NONE
+110,"The following are multiple choice questions (with answers) about human aging.
+
+If links between various diseases are found, then future older adults will probably
+A. Take fewer medications
+B. Be able to avoid certain diseases
+C. Pay far less for pharmaceuticals
+D. Pick and choose the disease(s) they want
+Answer:",mmlu,mmlu-110,Label.NONE
+111,"The following are multiple choice questions (with answers) about human aging.
+
+With respect to hair loss
+A. Men lose but women do not
+B. Men are more systematic than women
+C. Women lose hair less frequently but more rapidly than men
+D. Environmental factors are the main causes
+Answer:",mmlu,mmlu-111,Label.NONE
+112,"The following are multiple choice questions (with answers) about human aging.
+
+In this chapter's Senior View, Pat Shelley told us that you shouldn't retire if
+A. You can't do it right
+B. You're younger than 60
+C. Your family wants you to keep working
+D. You have no hobbies
+Answer:",mmlu,mmlu-112,Label.NONE
+113,"The following are multiple choice questions (with answers) about human aging.
+
+A person who is not very well organized, rarely sets goals, and frequently puts things off until the last minute would be said to be low on which trait?
+A. Agreeableness
+B. Conscientiousness
+C. Openness
+D. Neuroticism
+Answer:",mmlu,mmlu-113,Label.NONE
+114,"The following are multiple choice questions (with answers) about human aging.
+
+As working people get closer to retirement they are more likely to
+A. Be absent from work
+B. Invest in craft and hobby books
+C. Do some informal planning
+D. Become irritated and anxious
+Answer:",mmlu,mmlu-114,Label.NONE
+115,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults may show less major depression than younger adults because they
+A. Have learned to cope with loss
+B. See major depression as a stigma
+C. Have very different brain biochemistry
+D. Are no longer concerned with emotional matters
+Answer:",mmlu,mmlu-115,Label.NONE
+116,"The following are multiple choice questions (with answers) about human aging.
+
+The different components of memory should be thought of as
+A. Being very independent
+B. Working one at a time
+C. Working as a system
+D. Taking turns
+Answer:",mmlu,mmlu-116,Label.NONE
+117,"The following are multiple choice questions (with answers) about human aging.
+
+Very rapid disposal of the body, before sundown on the day of the death, is typical of which religion?
+A. Islam
+B. Hindu
+C. Jewish
+D. Tao
+Answer:",mmlu,mmlu-117,Label.NONE
+118,"The following are multiple choice questions (with answers) about human aging.
+
+An example of an objective test of personality is the
+A. TAT
+B. MMPI
+C. Rorschach ink blot test
+D. McAdams test of levels
+Answer:",mmlu,mmlu-118,Label.NONE
+119,"The following are multiple choice questions (with answers) about human aging.
+
+When a measure actually quantifies what it claims to measure, we say that it has good
+A. Accuracy
+B. Validity
+C. Reliability
+D. Associative value
+Answer:",mmlu,mmlu-119,Label.NONE
+120,"The following are multiple choice questions (with answers) about human aging.
+
+In which country do most individuals choose to be cremated?
+A. Japan
+B. U. S. A.
+C. Kenya
+D. Mexico
+Answer:",mmlu,mmlu-120,Label.NONE
+121,"The following are multiple choice questions (with answers) about human aging.
+
+A possible positive effect of moderate alcohol consumption is that it may
+A. Inhibit the growth of cancers
+B. Promote healing from injuries and illnesses
+C. Keep blood vessels from stiffening
+D. Result in relaxation and lower blood pressure
+Answer:",mmlu,mmlu-121,Label.NONE
+122,"The following are multiple choice questions (with answers) about human aging.
+
+The environmental design that brings pets and plants to nursing homes and young people and children as regular visitors is referred to as
+A. Instrumental Living Design
+B. The Humanistic Choice
+C. Human-Environment Congruence
+D. The Eden Alternative
+Answer:",mmlu,mmlu-122,Label.NONE
+123,"The following are multiple choice questions (with answers) about human aging.
+
+Excess disability refers to symptoms that are
+A. Not due to the disease but due instead to malignant social psychology
+B. In excess of the average for that particular disorder
+C. Found only in the last stage of Alzheimer's
+D. Those that can be successfully treated by medicine if they are caught early enough
+Answer:",mmlu,mmlu-123,Label.NONE
+124,"The following are multiple choice questions (with answers) about human aging.
+
+Well being for younger adults is positively related to which form of control?
+A. Positive reappraisal
+B. Lowering of aspirations
+C. Primary
+D. Internal
+Answer:",mmlu,mmlu-124,Label.NONE
+125,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is NOT one of the major reasons for the increase in numbers of older adults?
+A. The Baby Boom generation
+B. The steadily increasing birth rate
+C. Increases in life expectancy at birth
+D. Increases in life expectancy at a specified age
+Answer:",mmlu,mmlu-125,Label.NONE
+126,"The following are multiple choice questions (with answers) about human aging.
+
+Before we can collect data from other human beings we must make sure that they
+A. Have information that will be worth our effort to collect
+B. Are going to be honest and forthright
+C. Are informed about our study and give their consent to participate
+D. Have been granted permission to participate by the IRB
+Answer:",mmlu,mmlu-126,Label.NONE
+127,"The following are multiple choice questions (with answers) about human aging.
+
+In this chapter's Senior View, May Lee told us that we should all respect our elders because
+A. They are much older than we are
+B. They raised us
+C. They lived through difficult times
+D. They ask nothing in return
+Answer:",mmlu,mmlu-127,Label.NONE
+128,"The following are multiple choice questions (with answers) about human aging.
+
+One line of evidence against antagonistic pleiotropy is that
+A. Women who have more children tend to live longer
+B. Some animals show little or no senescence
+C. Even tissue cells with longer telomere strands can show senescence
+D. Exercise increases rather than decreases longevity
+Answer:",mmlu,mmlu-128,Label.NONE
+129,"The following are multiple choice questions (with answers) about human aging.
+
+Loss of muscle fiber may be due to loss of neurons which may be due to
+A. Clogged blood vessels
+B. Loss of bone density
+C. Changes in hormone levels
+D. Loss of collagen
+Answer:",mmlu,mmlu-129,Label.NONE
+130,"The following are multiple choice questions (with answers) about human aging.
+
+After losing a spouse, the surviving spouse often dies within the first year because of
+A. Stress and loss of social support
+B. Having the same disorder as the deceased
+C. The inability to remarry quickly
+D. They have the same defective genes
+Answer:",mmlu,mmlu-130,Label.NONE
+131,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following factors has NOT received as much support as the others in research investigating why social support is related to better health?
+A. Social
+B. Behavioral
+C. Psychological
+D. Gerontological
+Answer:",mmlu,mmlu-131,Label.NONE
+132,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults' coping strategies are generally
+A. Ineffective at solving problems
+B. Variable as they have more strategies
+C. Persistent as they use the same strategy over and over
+D. Narrow as they ignore many aspects of the problem
+Answer:",mmlu,mmlu-132,Label.NONE
+133,"The following are multiple choice questions (with answers) about human aging.
+
+Men are more likely than women to die from
+A. Septicemia
+B. Stroke
+C. Suicide
+D. Influenza
+Answer:",mmlu,mmlu-133,Label.NONE
+134,"The following are multiple choice questions (with answers) about human aging.
+
+The slowing that occurs with advanced age appears to be centered in
+A. The sense organs themselves
+B. The brain
+C. The muscle fibers
+D. The peripheral nervous system
+Answer:",mmlu,mmlu-134,Label.NONE
+135,"The following are multiple choice questions (with answers) about human aging.
+
+One possible reason that time seems to pass more rapidly for older adults is that
+A. Their memories are poor so they forget to check the time
+B. They have fewer novel experiences
+C. They pay less attention to important events in life
+D. Their lives are full of events which they don't recall at a later time
+Answer:",mmlu,mmlu-135,Label.NONE
+136,"The following are multiple choice questions (with answers) about human aging.
+
+If we found that adult age was significantly and positively correlated with consumption of herbal teas, we could conclude that
+A. Drinking herbal teas makes one grow older more slowly
+B. Becoming older causes one to begin or increase consumption of herbal teas
+C. Older adults drink less herbal tea than do younger adults
+D. Older adults drink more herbal tea than do younger adults
+Answer:",mmlu,mmlu-136,Label.NONE
+137,"The following are multiple choice questions (with answers) about human aging.
+
+The initials ADL stand for
+A. Activities of Daily Living
+B. American Disease Legion
+C. Always Delay Learning
+D. Ancient Dependent Ladies
+Answer:",mmlu,mmlu-137,Label.NONE
+138,"The following are multiple choice questions (with answers) about human aging.
+
+The dementia that results from a long-term deficiency of thiamine is one type of ____ dementia
+A. Alzheimer's
+B. Korsakoff's
+C. Creutzfeldt-Jakob
+D. Lewy body
+Answer:",mmlu,mmlu-138,Label.NONE
+139,"The following are multiple choice questions (with answers) about human aging.
+
+The initial length of telomere stand for members of a species is
+A. Always the same
+B. Determined genetically
+C. Dependent upon climate and time of year at birth
+D. Determined by parent diet and exercise
+Answer:",mmlu,mmlu-139,Label.NONE
+140,"The following are multiple choice questions (with answers) about human aging.
+
+The current record for longest lived human being is held by
+A. Jeanne Calment
+B. Maggie Kuhn
+C. Maria Esther de Capovilla
+D. M. Cherie Clark
+Answer:",mmlu,mmlu-140,Label.NONE
+141,"The following are multiple choice questions (with answers) about human aging.
+
+Glaucoma refers to the condition in which
+A. Fluid pressure in the eye is above normal
+B. Inner and outer layers of the retina separate
+C. The lens becomes cloudy and opaque
+D. The central part of the retina no longer functions
+Answer:",mmlu,mmlu-141,Label.NONE
+142,"The following are multiple choice questions (with answers) about human aging.
+
+Workers in which of the following jobs still have mandatory retirements once they reach a certain age?
+A. Cab drivers
+B. Fire fighters
+C. Insurance regulators
+D. Computer programmers
+Answer:",mmlu,mmlu-142,Label.NONE
+143,"The following are multiple choice questions (with answers) about human aging.
+
+Validation therapy refers to treatments in which the person with dementia
+A. Is carefully monitored day and night
+B. Is treated like a fellow human being
+C. Is left alone to die peacefully
+D. Is given double or triple doses of medication
+Answer:",mmlu,mmlu-143,Label.NONE
+144,"The following are multiple choice questions (with answers) about human aging.
+
+Surveys of bereaved individuals have found that one of the things that is reported as being most helpful is when others
+A. Avoid any discussion of the deceased
+B. Remain in close contact
+C. Stay away and let the person grieve
+D. Change the home environment for the bereaved
+Answer:",mmlu,mmlu-144,Label.NONE
+145,"The following are multiple choice questions (with answers) about human aging.
+
+An example of a gain, rather than a loss, that occurs as we grow older is our gain in
+A. Perspective
+B. Quickness
+C. Size of our social networks
+D. Certainty
+Answer:",mmlu,mmlu-145,Label.NONE
+146,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following appears to remain relatively stable over the adult years?
+A. Sensory memories
+B. Personal concerns
+C. Marital strain
+D. Job satisfaction
+Answer:",mmlu,mmlu-146,Label.NONE
+147,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is always the longest?
+A. Life expectancy at birth (LEAB)
+B. Life span
+C. Life expectancy at a specified age (LEASA)
+D. There is no way of knowing
+Answer:",mmlu,mmlu-147,Label.NONE
+148,"The following are multiple choice questions (with answers) about human aging.
+
+Of the following, which is the more frequent stereotype of older adults?
+A. Full of wisdom and knowledge
+B. Healthy and independent
+C. Confused and disoriented
+D. Sleepy and lazy
+Answer:",mmlu,mmlu-148,Label.NONE
+149,"The following are multiple choice questions (with answers) about human aging.
+
+One reason that older adults may have difficulty in retrieving memories is that
+A. Long-term memory often discards older and unused memories
+B. There are many more memories to search through to find the one that is sought
+C. Older adults quit searching because they have more important things to do
+D. Memory is less well organized as we grow older and finding a memory can be quite difficult
+Answer:",mmlu,mmlu-149,Label.NONE
+150,"The following are multiple choice questions (with answers) about human aging.
+
+Even a small amount of sleep deprivation seems to
+A. Increase weight
+B. Improve sleep quality
+C. Disrupt attention the next day
+D. Increase irritability
+Answer:",mmlu,mmlu-150,Label.NONE
+151,"The following are multiple choice questions (with answers) about human aging.
+
+NEAT may be one way in which some people are able to maintain a healthy BMI; NEAT refers to
+A. Eating the right kinds of low calorie foods
+B. Daily activities like walking, gesturing, and even fidgeting
+C. Intense aerobic exercise practiced at least 3 times a week
+D. Surgical removal of fatty tissue
+Answer:",mmlu,mmlu-151,Label.NONE
+152,"The following are multiple choice questions (with answers) about human aging.
+
+Over the last decade or two, which of the following causes of death has shown a huge increase?
+A. Alzheimer's
+B. Cancer
+C. Cardiovascular diseases
+D. Homicide
+Answer:",mmlu,mmlu-152,Label.NONE
+153,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following statements is TRUE concerning older workers' job performance?
+A. Older workers always perform better because of their vast experience
+B. Older workers never perform better than younger workers because with age, a worker's skills decline.
+C. Job performance for older workers depends both upon the decline of skills and the benefits of experience
+D. Most jobs are performed better by younger adults but a few are performed better by older adults
+Answer:",mmlu,mmlu-153,Label.NONE
+154,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults' negative beliefs about their own memories seem to be more influenced by _____ than by their actual performance on memory tests
+A. Negative stereotypes about older memory
+B. Time of day and weather conditions
+C. Who they are speaking with
+D. Their slower processing speed
+Answer:",mmlu,mmlu-154,Label.NONE
+155,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is NOT one of the more frequently named activities by those who are retired?
+A. Volunteering
+B. Travel
+C. Redoing the home
+D. Household chores
+Answer:",mmlu,mmlu-155,Label.NONE
+156,"The following are multiple choice questions (with answers) about human aging.
+
+The retirement phase that occurs least frequently is the ____ phase
+A. Disenchantment
+B. Honeymoon
+C. Retirement routine
+D. Preretirement
+Answer:",mmlu,mmlu-156,Label.NONE
+157,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is the most important variable for gerontological researchers?
+A. Age
+B. Gender
+C. Cohort
+D. Time of measurement
+Answer:",mmlu,mmlu-157,Label.NONE
+158,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following does NOT increase the risk of falling?
+A. Taking many prescription medications
+B. Visual impairment
+C. Having no emotional support
+D. A change in walking style or gait
+Answer:",mmlu,mmlu-158,Label.NONE
+159,"The following are multiple choice questions (with answers) about human aging.
+
+The main reason given by men and women for their long lasting marriage is that
+A. They are best friends
+B. They must fulfill their vows
+C. They agree on almost everything
+D. They owe it to their children
+Answer:",mmlu,mmlu-159,Label.NONE
+160,"The following are multiple choice questions (with answers) about human aging.
+
+An older adult who has received a message (e.g., it's going to rain tomorrow) would be most likely to remember what when telling another person?
+A. The person who told them it would rain
+B. Where they were when they received the message
+C. The contents of the message
+D. The time of day that the message was received
+Answer:",mmlu,mmlu-160,Label.NONE
+161,"The following are multiple choice questions (with answers) about human aging.
+
+The lifespan perspective says that development is composed of gains and losses; this means that
+A. We gain while we are younger but lose when we are older
+B. We gain some things and lose others at every age
+C. For every aspect of development there is no overall change since each gain is offset by loss
+D. Gains are far more important than losses but losses occur too
+Answer:",mmlu,mmlu-161,Label.NONE
+162,"The following are multiple choice questions (with answers) about human aging.
+
+Identity refers to one's
+A. Use of a particular coping strategy
+B. Control over one's own life story
+C. Physical appearance and overall personality
+D. Coherent sense of self
+Answer:",mmlu,mmlu-162,Label.NONE
+163,"The following are multiple choice questions (with answers) about human aging.
+
+Current estimates of how many people exercise on a regular basis suggest that _____ do
+A. Less than 50%
+B. More than 75%
+C. Less than 25%
+D. More than 50%
+Answer:",mmlu,mmlu-163,Label.NONE
+164,"The following are multiple choice questions (with answers) about human aging.
+
+An increased frequency of urination in older adults is most likely caused by
+A. Prostate cancer
+B. Smaller bladder
+C. Kidney problems
+D. Gall stone(s)
+Answer:",mmlu,mmlu-164,Label.NONE
+165,"The following are multiple choice questions (with answers) about human aging.
+
+Some research has found that later cognitive decline is predicted by earlier
+A. Cardiovascular problems
+B. Loss of muscle strength
+C. Immune system decline
+D. Graying of hair
+Answer:",mmlu,mmlu-165,Label.NONE
+166,"The following are multiple choice questions (with answers) about human aging.
+
+The law that requires all healthcare institutions that receive Medicaid funds to inform patients about advance directives is called the
+A. Patient Self-Determination Act
+B. Informed Consent Act
+C. Advance Directive
+D. Medicaid Directive Information Act
+Answer:",mmlu,mmlu-166,Label.NONE
+167,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is NOT among the top 10 causes of death in the U. S.?
+A. Kidney diseases
+B. AIDS
+C. Septicemia
+D. Accidents
+Answer:",mmlu,mmlu-167,Label.NONE
+168,"The following are multiple choice questions (with answers) about human aging.
+
+Presbyopia refers to
+A. The point of clearest vision moving closer to the eye
+B. The decline in vision with advanced age
+C. The loss of hearing for higher pitch as one grows older
+D. The point of clearest vision moving farther from the eye
+Answer:",mmlu,mmlu-168,Label.NONE
+169,"The following are multiple choice questions (with answers) about human aging.
+
+The design of products and environments to fit the capabilities of people who use them or live there is called _____ design
+A. Environmental
+B. Ecological
+C. Ergonomic
+D. Eclectic
+Answer:",mmlu,mmlu-169,Label.NONE
+170,"The following are multiple choice questions (with answers) about human aging.
+
+The insurance program for poor people of all ages is called
+A. Hospice
+B. Medicaid
+C. Medicare
+D. Respite
+Answer:",mmlu,mmlu-170,Label.NONE
+171,"The following are multiple choice questions (with answers) about human aging.
+
+When damage to the brain is irreversible and increasing we refer to the disorder as
+A. Delirium
+B. MCI
+C. Dementia
+D. Pick's
+Answer:",mmlu,mmlu-171,Label.NONE
+172,"The following are multiple choice questions (with answers) about human aging.
+
+Grandparents with grandchildren in college report feeling especially loved when such grandchildren
+A. Ask about their satisfaction with life and offer to help
+B. Visit during the holidays and bring gifts
+C. Pay a surprise visit and ask for advice
+D. Invite the grandparents over to their place and cook a good meal
+Answer:",mmlu,mmlu-172,Label.NONE
+173,"The following are multiple choice questions (with answers) about human aging.
+
+The influence of genetics on longevity is estimated to be about
+A. 20%
+B. 33%
+C. 50%
+D. 75%
+Answer:",mmlu,mmlu-173,Label.NONE
+174,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults are most likely to be involved in a traffic accident when they are
+A. On foot
+B. Driving in a new location
+C. A passenger in a younger person's car
+D. Alone
+Answer:",mmlu,mmlu-174,Label.NONE
+175,"The following are multiple choice questions (with answers) about human aging.
+
+Life stories are more likely for people who have a sense of
+A. Well being
+B. Personal control
+C. Generativity
+D. Humor
+Answer:",mmlu,mmlu-175,Label.NONE
+176,"The following are multiple choice questions (with answers) about human aging.
+
+The idea that the ability to complete a task depends on the fit between the environment and the person undertaking the task is a basic tenet of which of the following theories of aging?
+A. Environmental
+B. Ecological
+C. Fitness
+D. Congruence
+Answer:",mmlu,mmlu-176,Label.NONE
+177,"The following are multiple choice questions (with answers) about human aging.
+
+Neuroticism has been found to be correlated with which of the following?
+A. Anger and guilt
+B. Apathy and indifference
+C. Deceit and cunning
+D. Mania and hypertension
+Answer:",mmlu,mmlu-177,Label.NONE
+178,"The following are multiple choice questions (with answers) about human aging.
+
+The Apo-E 2 protein is very prevalent in people who
+A. Die young
+B. Live to be 100 or older
+C. Have healthy immune systems
+D. Also have high levels of Apo-E 4
+Answer:",mmlu,mmlu-178,Label.NONE
+179,"The following are multiple choice questions (with answers) about human aging.
+
+Information coming into our cognitive system is thought to first enter a
+A. Sensory memory
+B. Perceptual processor
+C. Working memory
+D. Meta-memory
+Answer:",mmlu,mmlu-179,Label.NONE
+180,"The following are multiple choice questions (with answers) about human aging.
+
+Omega 3 appears to reduce the risk of
+A. Some cancers
+B. Cardiovascular disease
+C. Arthritis
+D. Insomnia
+Answer:",mmlu,mmlu-180,Label.NONE
+181,"The following are multiple choice questions (with answers) about human aging.
+
+The term ""senescence"" refers to
+A. An increased vulnerability
+B. The process of becoming older
+C. The loss of mental abilities
+D. Biological aging
+Answer:",mmlu,mmlu-181,Label.NONE
+182,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following is caused by a prion?
+A. Vascular dementia
+B. Alzheimer's
+C. Creutzfeldt-Jakob
+D. Huntington's
+Answer:",mmlu,mmlu-182,Label.NONE
+183,"The following are multiple choice questions (with answers) about human aging.
+
+A difference between the social networks of older and younger adults is that older adults have
+A. Larger inner circles
+B. Larger outer circles
+C. Smaller inner circles
+D. Smaller outer circles
+Answer:",mmlu,mmlu-183,Label.NONE
+184,"The following are multiple choice questions (with answers) about human aging.
+
+The first person to measure and compare the response times of young and old was
+A. Francis Galton
+B. William James
+C. Michelle Meer
+D. Tom Penge
+Answer:",mmlu,mmlu-184,Label.NONE
+185,"The following are multiple choice questions (with answers) about human aging.
+
+About what percentage of people who have had bridge jobs say it was better than their career job?
+A. Less than 25%
+B. Less than 50%
+C. More than 50%
+D. More than 75%
+Answer:",mmlu,mmlu-185,Label.NONE
+186,"The following are multiple choice questions (with answers) about human aging.
+
+We want our measures to be as reliable as possible; reliability refers to
+A. Whether our measure really measure anything at all
+B. Whether our measure is really measuring what it claims to measure
+C. Whether our measure is consistent in the information it provides
+D. Whether our measure has or has not been used before
+Answer:",mmlu,mmlu-186,Label.NONE
+187,"The following are multiple choice questions (with answers) about human aging.
+
+A problem in comparing older adults' memory for recent events and events that happened a long time ago is that recent events
+A. May be very well rehearsed
+B. Are far more meaningful
+C. Have no denominator to help in computing an average
+D. Can be verified while older events often cannot
+Answer:",mmlu,mmlu-187,Label.NONE
+188,"The following are multiple choice questions (with answers) about human aging.
+
+Of the following types of memory, which shows the biggest deficit with advanced age?
+A. Sensory memory
+B. Episodic memory
+C. Semantic memory
+D. Procedural memory
+Answer:",mmlu,mmlu-188,Label.NONE
+189,"The following are multiple choice questions (with answers) about human aging.
+
+The loss of a ____ is regarded in the U. S. as the most severe loss and frequently produces guilt in addition to other emotions.
+A. Spouse
+B. Parent
+C. Child
+D. Sibling
+Answer:",mmlu,mmlu-189,Label.NONE
+190,"The following are multiple choice questions (with answers) about human aging.
+
+DNA damage/repair theory claims that senescence is due to cells getting incorrect instructions from DNA damaged by sources such as
+A. Radiation from anti-oxidants
+B. Metabolic processes
+C. Free radicals and sunlight
+D. Telomerase
+Answer:",mmlu,mmlu-190,Label.NONE
+191,"The following are multiple choice questions (with answers) about human aging.
+
+Comorbidity is a problem for older adults because it
+A. Makes correct diagnoses difficult
+B. Increases funeral costs
+C. Is very contagious
+D. Cannot, at present, be cured
+Answer:",mmlu,mmlu-191,Label.NONE
+192,"The following are multiple choice questions (with answers) about human aging.
+
+With respect to theories of senescence, it's probably safe to say that
+A. Programmed theories are the best we have at present
+B. Many theories will have to be combined to explain senescence
+C. The evidence for these theories is direct and quickly accumulating
+D. All of these theories are merely speculation at this point
+Answer:",mmlu,mmlu-192,Label.NONE
+193,"The following are multiple choice questions (with answers) about human aging.
+
+Current life expectancy in the United States is about
+A. 78
+B. 82
+C. 68
+D. 75
+Answer:",mmlu,mmlu-193,Label.NONE
+194,"The following are multiple choice questions (with answers) about human aging.
+
+A burial site where the body is allowed to decompose naturally without a casket is called a _____ cemetery
+A. Naturalistic
+B. Green
+C. Rapid decay
+D. Sunshine
+Answer:",mmlu,mmlu-194,Label.NONE
+195,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults with higher education and self-esteem are more likely to be
+A. Sexually active
+B. Socially isolated
+C. Lonely as they grow older
+D. Married for a long time
+Answer:",mmlu,mmlu-195,Label.NONE
+196,"The following are multiple choice questions (with answers) about human aging.
+
+BMI is regarded as a better measure of health than weight by itself because BMI is based on weight and
+A. Height
+B. Bone structure
+C. Immune Function
+D. Diet and exercise
+Answer:",mmlu,mmlu-196,Label.NONE
+197,"The following are multiple choice questions (with answers) about human aging.
+
+Morbidity refers to
+A. Death
+B. Social and emotional isolation
+C. Increased disability and declining health
+D. A period of intense personal loss
+Answer:",mmlu,mmlu-197,Label.NONE
+198,"The following are multiple choice questions (with answers) about human aging.
+
+Older adults are able to improve their memories and reduce their anxiety about declining memory when
+A. They learn about memory and aging and learn some techniques
+B. They simply learn a number of memory improvement techniques
+C. They learn that many aspects of memory do not decline and some even get better
+D. Older adults cannot do either of these
+Answer:",mmlu,mmlu-198,Label.NONE
+199,"The following are multiple choice questions (with answers) about human aging.
+
+Hearing loss for higher pitch is referred to as
+A. Presbyopia
+B. Presbycusis
+C. Pitch deafness
+D. Conductive loss
+Answer:",mmlu,mmlu-199,Label.NONE
+200,"The following are multiple choice questions (with answers) about human aging.
+
+In this chapter's Senior View, Tolly Kleckley told us that personality
+A. Changes a lot past age 50
+B. Doesn't change past age 50
+C. Pretty much stays the same
+D. Changes more for women than for men
+Answer:",mmlu,mmlu-200,Label.NONE
+201,"The following are multiple choice questions (with answers) about human aging.
+
+The Kingbergs give us several keys to successful aging; which of the following is one that they did not name?
+A. Eat the correct food but not too much.
+B. Respect each other
+C. Party at least once a month
+D. Make long-range plans
+Answer:",mmlu,mmlu-201,Label.NONE
+202,"The following are multiple choice questions (with answers) about human aging.
+
+Those who have lost a close family member to suicide most often experience
+A. A lack of support from others
+B. A desire to kill themselves
+C. Feelings of relief and release
+D. Severe but temporary cognitive impairment
+Answer:",mmlu,mmlu-202,Label.NONE
+203,"The following are multiple choice questions (with answers) about human aging.
+
+Our bodies have a natural, built in defense against free radicals that is referred to as
+A. AFR
+B. SOD
+C. Vitamin C
+D. Telomerase
+Answer:",mmlu,mmlu-203,Label.NONE
+204,"The following are multiple choice questions (with answers) about human aging.
+
+Open-ended questions on a survey often make it difficult to
+A. Get people to fill the survey out
+B. Interpret the answers you get from people
+C. Collect data in a timely manner
+D. Get anyone to believe your results
+Answer:",mmlu,mmlu-204,Label.NONE
+205,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following groups is likely to have the more positive view of aging and older adults?
+A. Other older adults
+B. Children younger than 10
+C. Young adults
+D. Adolescents
+Answer:",mmlu,mmlu-205,Label.NONE
+206,"The following are multiple choice questions (with answers) about human aging.
+
+The paradox of well-being refers to the finding of high levels of happiness among
+A. Unhappy people
+B. Older adults
+C. People with very low SES
+D. Terminally ill people
+Answer:",mmlu,mmlu-206,Label.NONE
+207,"The following are multiple choice questions (with answers) about human aging.
+
+The Supreme Court has now ruled that older workers need no longer prove _____________ to win a job discrimination suit.
+A. Discrimination
+B. Age bias
+C. Negative impact
+D. Intention
+Answer:",mmlu,mmlu-207,Label.NONE
+208,"The following are multiple choice questions (with answers) about human aging.
+
+The decline in working memory with advanced age seems to be due to
+A. A loss of resources and slower processing speed
+B. An increase in the inhibition of relevant information
+C. A general decline in the ability to process information
+D. A severe loss of neural connections and decreased blood flow
+Answer:",mmlu,mmlu-208,Label.NONE
+209,"The following are multiple choice questions (with answers) about human aging.
+
+A disadvantage of institutional care is that the staff frequently teach older residents to be
+A. Rude
+B. Dependent
+C. Independent
+D. Selfish
+Answer:",mmlu,mmlu-209,Label.NONE
+210,"The following are multiple choice questions (with answers) about human aging.
+
+If you believe that we are mostly in control of our own development and that our behaviors, good or bad, determine how successful our aging with be, you would be said to have which of the following perspectives?
+A. Organismic
+B. Nurture
+C. Continuity
+D. Mechanistic
+Answer:",mmlu,mmlu-210,Label.NONE
+211,"The following are multiple choice questions (with answers) about human aging.
+
+The age at which one can receive full benefits from social security
+A. Is 62
+B. Is 65
+C. Has been increasing
+D. Will never change
+Answer:",mmlu,mmlu-211,Label.NONE
+212,"The following are multiple choice questions (with answers) about human aging.
+
+Loss of stomach lining can lead to symptoms that resemble
+A. Anorexia
+B. Dementia
+C. Senescence
+D. Hepatitis
+Answer:",mmlu,mmlu-212,Label.NONE
+213,"The following are multiple choice questions (with answers) about human aging.
+
+Which of the following has NOT been shown to be an effective treatment for depression in older adults?
+A. Rigorous exercise
+B. Life review
+C. Mental stimulation
+D. Anti-depressant drugs
+Answer:",mmlu,mmlu-213,Label.NONE
+214,"The following are multiple choice questions (with answers) about human aging.
+
+The term Baby Boom Generation refers to people who
+A. Were born before WW II
+B. Have had an extraordinary number of offspring
+C. Were born right after WW II
+D. Have raised their children in small villages
+Answer:",mmlu,mmlu-214,Label.NONE
+215,"The following are multiple choice questions (with answers) about human aging.
+
+Older workers are more likely to
+A. Be absent from work
+B. Be dissatisfied with their jobs
+C. Be less productive
+D. Be laid off
+Answer:",mmlu,mmlu-215,Label.NONE
+216,"The following are multiple choice questions (with answers) about human aging.
+
+Mabel Davis, in this chapter's Senior View, would agree with which of the following?
+A. Time seems to speed up when you grow older
+B. Exercise keeps your mind sharp
+C. Women are tougher than men
+D. Glasses and hearing aids should be avoided
+Answer:",mmlu,mmlu-216,Label.NONE
+217,"The following are multiple choice questions (with answers) about human aging.
+
+The information stored in memory, according to research and our Senior View interviewees, is
+A. True to life
+B. Our own interpretation
+C. Always exaggerated
+D. Never accurate
+Answer:",mmlu,mmlu-217,Label.NONE
+218,"The following are multiple choice questions (with answers) about human aging.
+
+When speaking with an older adults with some hearing loss, you should
+A. Speak a little slower than normal
+B. Speak loudly into their best ear
+C. Face them so they can watch your lips
+D. Ask another person to translate
+Answer:",mmlu,mmlu-218,Label.NONE
+219,"The following are multiple choice questions (with answers) about human aging.
+
+Longevity is strongly associated with higher levels of
+A. Social support
+B. BMI
+C. Alcohol use
+D. Supplement use
+Answer:",mmlu,mmlu-219,Label.NONE
+220,"The following are multiple choice questions (with answers) about human aging.
+
+The hypothesis that says adults will remain healthy until very old age and then quickly become ill and die is the ____ hypothesis
+A. Terminal drop
+B. Compression of morbidity
+C. Klagmore-Rensfeldt
+D. Decline avoidance
+Answer:",mmlu,mmlu-220,Label.NONE
+221,"The following are multiple choice questions (with answers) about human aging.
+
+The woman who conducted a longitudinal study on herself and found increased retrieval difficulty as she got older was named
+A. Clark
+B. Smith
+C. Whitebear
+D. Ebbinghaus
+Answer:",mmlu,mmlu-221,Label.NONE

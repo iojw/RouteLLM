@@ -1,0 +1,1283 @@
+,prompt,source,prompt_id,prediction
+0,"The following are multiple choice questions (with answers) about econometrics.
+
+What is the main difference between the Dickey Fuller (DF) and Phillips-Perron (PP) approaches to unit root testing?
+A. ADF is a single equation approach to unit root testing while PP is a systems approach
+B. PP tests reverse the DF null and alternative hypotheses so that there is stationarity under the null hypothesis of the PP test
+C. The PP test incorporates an automatic correction for autocorrelated residuals in the test regression
+D. PP tests have good power in small samples whereas DF tests do not.
+Answer:",mmlu,mmlu-0,Label.NONE
+1,"The following are multiple choice questions (with answers) about econometrics.
+
+If there were a leverage effect in practice, what would be the shape of the news impact curve for as model that accounted for that leverage?
+A. It would rise more quickly for negative disturbances than for positive ones of the same magnitude
+B. It would be symmetrical about zero
+C. It would rise less quickly for negative disturbances than for positive ones of the same magnitude
+D. It would be zero for all positive disturbances
+Answer:",mmlu,mmlu-1,Label.NONE
+2,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is false concerning the linear probability model?
+A. There is nothing in the model to ensure that the estimated probabilities lie between zero and one
+B. Even if the probabilities are truncated at zero and one, there will probably be many observations for which the probability is either exactly zero or exactly one
+C. The error terms will be heteroscedastic and not normally distributed
+D. The model is much harder to estimate than a standard regression model with a continuous dependent variable
+Answer:",mmlu,mmlu-2,Label.NONE
+3,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements concerning the regression population and sample is FALSE?
+A. The population is the total collection of all items of interest
+B. The population can be infinite
+C. In theory, the sample could be larger than the population
+D. A random sample is one where each individual item from the population is equally likely to be drawn.
+Answer:",mmlu,mmlu-3,Label.NONE
+4,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is INCORRECT concerning a comparison of the Box-Pierce Q and the Ljung-Box Q* statistics for linear dependence in time series?
+A. Asymptotically, the values of the two test statistics will be equal
+B. The Q test has better small-sample properties than the Q*
+C. The Q test is sometimes over-sized for small samples
+D. As the sample size tends towards infinity, both tests will show a tendency to always reject the null hypothesis of zero autocorrelation coefficients.
+Answer:",mmlu,mmlu-4,Label.NONE
+5,"The following are multiple choice questions (with answers) about econometrics.
+
+A parsimonious model is one that
+A. Includes too many variables
+B. Includes as few variables as possible to explain the data
+C. Is a well-specified model
+D. Is a mis-specified model
+Answer:",mmlu,mmlu-5,Label.NONE
+6,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is NOT a feature of continuously compounded returns (i.e. log-returns)?
+A. They can be interpreted as continuously compounded changes in the prices
+B. They can be added over time to give returns for longer time periods
+C. They can be added across a portfolio of assets to give portfolio returns
+D. They are usually fat-tailed
+Answer:",mmlu,mmlu-6,Label.NONE
+7,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following features of financial asset return time-series could be captured using a standard GARCH(1,1) model?
+
+i) Fat tails in the return distribution
+
+
+ii) Leverage effects
+
+
+iii) Volatility clustering
+
+
+iv) Volatility affecting returns
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-7,Label.NONE
+8,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the estimation of a GARCH-M model. If the data employed were a time-series of daily corporate bond percentage returns, which of the following would you expect the value of the GARCH-in-mean parameter estimate to be?
+A. Less than -1
+B. Between -1 and 0
+C. Between 0 and 1
+D. Bigger than 1
+Answer:",mmlu,mmlu-8,Label.NONE
+9,"The following are multiple choice questions (with answers) about econometrics.
+
+Under which of the following situations would bootstrapping be preferred to pure simulation?
+
+i) If it is desired that the distributional properties of the data in the experiment
+
+are the same as those of some actual data
+
+
+ii) If it is desired that the distributional properties of the data in the experiment
+
+are known exactly
+
+
+iii) If the distributional properties of the actual data are unknown
+
+
+iv) If the sample of actual data available is very small
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iv) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-9,Label.NONE
+10,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following may be consequences of one or more of the CLRM assumptions being violated?
+
+i) The coefficient estimates are not optimal
+
+
+ii) The standard error estimates are not optimal
+
+
+iii) The distributions assumed for the test statistics are inappropriate
+
+
+iv) Conclusions regarding the strength of relationships between the dependent
+
+and independent variables may be invalid.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-10,Label.NONE
+11,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is true concerning forecasting in econometrics?
+A. Forecasts can only be made for time-series data
+B. Mis-specified models are certain to produce inaccurate forecasts
+C. Structural forecasts are simpler to produce than those from time series models
+D. In-sample forecasting ability is a poor test of model adequacy
+Answer:",mmlu,mmlu-11,Label.NONE
+12,"The following are multiple choice questions (with answers) about econometrics.
+
+The pacf is necessary for distinguishing between
+A. An AR and an MA model
+B. An AR and an ARMA model
+C. An MA and an ARMA model
+D. Different models from within the ARMA family
+Answer:",mmlu,mmlu-12,Label.NONE
+13,"The following are multiple choice questions (with answers) about econometrics.
+
+Negative residual autocorrelation is indicated by which one of the following?
+A. A cyclical pattern in the residuals
+B. An alternating pattern in the residuals
+C. A complete randomness in the residuals
+D. Residuals that are all close to zero
+Answer:",mmlu,mmlu-13,Label.NONE
+14,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning a comparison between ARCH(q) and GARCH(1,1) models?
+
+i) The ARCH(q) model is likely to be the more parsimonious
+
+
+ii) The ARCH(q) model is the more likely to violate non-negativity constraints
+
+
+iii) The ARCH(q) model can allow for an infinite number of previous lags of squared
+
+returns to affect the current conditional variance
+
+
+iv) The GARCH(1,1) model will usually be sufficient to capture all of the dependence
+
+in the conditional variance
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-14,Label.NONE
+15,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning a triangular or recursive system?
+
+i) The parameters can be validly estimated using separate applications of OLS to
+
+each equation
+
+
+ii) The independent variables may be correlated with the error terms in other
+
+equations
+
+
+iii) An application of 2SLS would lead to unbiased but inefficient parameter estimates
+
+
+iv) The independent variables may be correlated with the error terms in the equations
+
+in which they appear as independent variables
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-15,Label.NONE
+16,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following statements best describes the algebraic representation of the fitted regression line?
+A. \hat{y}_t = \hat{\alpha} + \hat{\beta}x_t + \hat{u}_t
+B. \hat{y}_t = \hat{\alpha} + \hat{\beta}x_t
+C. \hat{y}_t = \hat{\alpha} + \hat{\beta}x_t + u_t
+D. y_t = \hat{\alpha} + \hat{\beta}x_t + \hat{u}_t
+Answer:",mmlu,mmlu-16,Label.NONE
+17,"The following are multiple choice questions (with answers) about econometrics.
+
+What are the dimensions of $\hat{u}^t \hat{u}?
+A. T x k
+B. T x 1
+C. k x 1
+D. 1 x 1
+Answer:",mmlu,mmlu-17,Label.NONE
+18,"The following are multiple choice questions (with answers) about econometrics.
+
+The characteristic roots of the MA process
+
+$y_t = -3u_{t-1} + u_{t-2} + u_t$
+
+are
+A. 1 and 2
+B. 1 and 0.5
+C. 2 and -0.5
+D. 1 and -3
+Answer:",mmlu,mmlu-18,Label.NONE
+19,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is an equivalent expression for saying that the explanatory variable is ""non-stochastic""?
+A. The explanatory variable is partly random
+B. The explanatory variable is fixed in repeated samples
+C. The explanatory variable is correlated with the errors
+D. The explanatory variable always has a value of one
+Answer:",mmlu,mmlu-19,Label.NONE
+20,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that the Durbin Watson test is applied to a regression containing two explanatory variables plus a constant with 50 data points. The test statistic takes a value of 1.53. What is the appropriate conclusion?
+A. Residuals appear to be positively autocorrelated
+B. Residuals appear to be negatively autocorrelated
+C. Residuals appear not to be autocorrelated
+D. The test result is inconclusive
+Answer:",mmlu,mmlu-20,Label.NONE
+21,"The following are multiple choice questions (with answers) about econometrics.
+
+If OLS is used in the presence of autocorrelation, which of the following will be likely consequences?
+
+i) Coefficient estimates may be misleading
+
+
+ii) Hypothesis tests could reach the wrong conclusions
+
+
+iii) Forecasts made from the model could be biased
+
+
+iv) Standard errors may inappropriate
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-21,Label.NONE
+22,"The following are multiple choice questions (with answers) about econometrics.
+
+What will be the properties of the OLS estimator in the presence of multicollinearity?
+A. It will be consistent, unbiased and efficient
+B. It will be consistent and unbiased but not efficient
+C. It will be consistent but not unbiased
+D. It will not be consistent
+Answer:",mmlu,mmlu-22,Label.NONE
+23,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following would NOT be a consequence of using non-stationary data in levels form?
+A. The regression $R^2$ may be spuriously high
+B. Test statistics may not follow standard distributions
+C. Statistical inferences may be invalid
+D. Parameter estimates may be biased
+Answer:",mmlu,mmlu-23,Label.NONE
+24,"The following are multiple choice questions (with answers) about econometrics.
+
+If a series, y, follows a random walk, what is the optimal one-step ahead forecast of y?
+A. The current value of y
+B. Zero
+C. One
+D. The average value of y over the in-sample period
+Answer:",mmlu,mmlu-24,Label.NONE
+25,"The following are multiple choice questions (with answers) about econometrics.
+
+The order condition is
+A. A necessary and sufficient condition for identification
+B. A necessary but not sufficient condition for identification
+C. A sufficient but not necessary condition for identification
+D. A condition that is nether necessary nor sufficient for identification
+Answer:",mmlu,mmlu-25,Label.NONE
+26,"The following are multiple choice questions (with answers) about econometrics.
+
+If an estimator is said to have minimum variance, which of the following statements is NOT implied?
+A. The probability that the estimate is a long way away from its true value is minimised
+B. The estimator is efficient
+C. Such an estimator would be termed ""best""
+D. Such an estimator will always be unbiased
+Answer:",mmlu,mmlu-26,Label.NONE
+27,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are disadvantages of the Dickey-Fuller / Engle-Granger approach to testing for cointegration and modelling cointegrating relationships?
+
+i) Only one cointegrating relationship can be estimated
+
+ii) Particularly for small samples. There is a high chance of the tests suggestingthat variables are not cointegrated when they are
+
+iii) It is not possible to make inferences on the cointegrating regression
+
+iv) The procedure forces the researcher to specify which is the dependent variable and which are the independent variables.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-27,Label.NONE
+28,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is true concerning the population regression function (PRF) and sample regression function (SRF)?
+A. The PRF is the estimated model
+B. The PRF is used to infer likely values of the SRF
+C. Whether the model is good can be determined by comparing the SRF and the PRF
+D. The PRF is a description of the process thought to be generating the data.
+Answer:",mmlu,mmlu-28,Label.NONE
+29,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following is a disadvantage of the general to specific or ""LSE"" (""Hendry"") approach to building econometric models, relative to the specific to general approach?
+A. Some variables may be excluded at the first stage leading to coefficient biases
+B. The final model may lack theoretical interpretation
+C. The final model may be statistically inadequate
+D. If the initial model is mis-specified, all subsequent steps will be invalid.
+Answer:",mmlu,mmlu-29,Label.NONE
+30,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning maximum likelihood (ML) estimation in the context of GARCH models?
+
+i) Maximum likelihood estimation selects the parameter values that maximise the
+
+probability that we would have actually observed the values of the series y that we
+
+actually did.
+
+
+ii) GARCH models can only be estimated by ML and not by OLS
+
+
+iii) For estimation of a standard linear model (with no GARCH), the OLS and ML
+
+estimates for the slope and intercept parameters will be identical but the estimator
+
+for the variance of the disturbances is slightly different
+
+
+iv) Most computer packages use numerical procedures to estimate GARCH models
+
+rather than a set of analytical formulae
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-30,Label.NONE
+31,"The following are multiple choice questions (with answers) about econometrics.
+
+Including relevant lagged values of the dependent variable on the right hand side of a regression equation could lead to which one of the following?
+A. Biased but consistent coefficient estimates
+B. Biased and inconsistent coefficient estimates
+C. Unbiased but inconsistent coefficient estimates
+D. Unbiased and consistent but inefficient coefficient estimates.
+Answer:",mmlu,mmlu-31,Label.NONE
+32,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following factors is likely to lead to a relatively high degree of out-of-sample forecast accuracy?
+A. A model that is based on financial theory
+B. A model that contains many variables
+C. A model whose dependent variable has recently exhibited a structural change
+D. A model that is entirely statistical in nature with no room for judgmental modification of forecasts
+Answer:",mmlu,mmlu-32,Label.NONE
+33,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are plausible approaches to dealing with residual autocorrelation?
+
+i) Take logarithms of each of the variables
+
+ii) Add lagged values of the variables to the regression equation
+
+iii) Use dummy variables to remove outlying observations
+
+iv) Try a model in first differenced form rather than in levels.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-33,Label.NONE
+34,"The following are multiple choice questions (with answers) about econometrics.
+
+For an autoregressive process to be considered stationary
+A. The roots of the characteristic equation must all lie inside the unit circle
+B. The roots of the characteristic equation must all lie on the unit circle
+C. The roots of the characteristic equation must all lie outside the unit circle
+D. The roots of the characteristic equation must all be less than one in absolute value
+Answer:",mmlu,mmlu-34,Label.NONE
+35,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning information criteria?
+
+(i) Adjusted R-squared is an information criterion
+
+(ii) If the residual sum of squares falls when an additional term is added, the value of the information criterion will fall
+
+(iii) Akaike's information criterion always leads to model orders that are at least as large as those of Schwarz's information criterion
+
+(iv) Akaike's information criterion is consistent
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-35,Label.NONE
+36,"The following are multiple choice questions (with answers) about econometrics.
+
+The ""within transform"" involves
+A. Taking the average values of the variables
+B. Subtracting the mean of each entity away from each observation on that entity
+C. Estimating a panel data model using least squares dummy variables
+D. Using both time dummies and cross-sectional dummies in a fixed effects panel model
+Answer:",mmlu,mmlu-36,Label.NONE
+37,"The following are multiple choice questions (with answers) about econometrics.
+
+The purpose of ""augmenting"" the Dickey-Fuller test regression is to
+A. Ensure that there is no heteroscedasticity in the test regression residuals.
+B. Ensure that the test regression residuals are normally distributed
+C. Ensure that there is no autocorrelation in the test regression residuals
+D. Ensure that all of the non-stationarity is taken into account.
+Answer:",mmlu,mmlu-37,Label.NONE
+38,"The following are multiple choice questions (with answers) about econometrics.
+
+If a series, y, follows a random walk with drift b, what is the optimal one-step ahead forecast of the change in y?
+A. The current value of y
+B. Zero
+C. One
+D. The average value of the change in y over the in-sample period
+Answer:",mmlu,mmlu-38,Label.NONE
+39,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are plausible approaches to dealing with a model that exhibits heteroscedasticity?
+
+i) Take logarithms of each of the variables
+
+ii) Use suitably modified standard errors
+
+iii) Use a generalised least squares procedure
+
+iv) Add lagged values of the variables to the regression equation.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-39,Label.NONE
+40,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning the standardised residuals (residuals divided by their respective conditional standard deviations) from an estimated GARCH model?
+
+i) They are assumed to be normally distributed
+
+
+ii) Their squares will be related to their lagged squared values if the GARCH model is
+
+appropriate
+
+
+iii) In practice, they are likely to have fat tails
+
+
+iv) If the GARCH model is adequate, the standardised residuals and the raw residuals
+
+will be identical
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-40,Label.NONE
+41,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following statements is true concerning VARs?
+A. The coefficient estimates have intuitive theoretical interpretations
+B. The coefficient estimates usually have the same sign for all of the lags of a given variable in a given equation
+C. VARs often produce better forecasts than simultaneous equation structural models
+D. All of the components of a VAR must be stationary before it can be used for forecasting
+Answer:",mmlu,mmlu-41,Label.NONE
+42,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is INCORRECT concerning the classical hypothesis testing framework?
+A. If the null hypothesis is rejected, the alternative is accepted
+B. The null hypothesis is the statement being tested while the alternative encompasses the remaining outcomes of interest
+C. The test of significance and confidence interval approaches will always give the same conclusions
+D. Hypothesis tests are used to make inferences about the population parameters.
+Answer:",mmlu,mmlu-42,Label.NONE
+43,"The following are multiple choice questions (with answers) about econometrics.
+
+An ARMA(p,q) (p, q are integers bigger than zero) model will have
+A. An acf and pacf that both decline geometrically
+B. An acf that declines geometrically and a pacf that is zero after p lags
+C. An acf that declines geometrically and a pacf that is zero after q lags
+D. An acf that is zero after p lags and a pacf that is zero after q lags
+Answer:",mmlu,mmlu-43,Label.NONE
+44,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that the following regression is estimated using 27 quarterly observations:
+
+$y_t = \beta_1 + \beta_2 x_2 + \beta_3 x_{3t} + u_t$
+
+What is the appropriate critical value for a 2-sided 5% size of test of $H_0: \beta_3 = 1$?
+A. 1.64
+B. 1.71
+C. 2.06
+D. 1.96
+Answer:",mmlu,mmlu-44,Label.NONE
+45,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that two researchers, using the same 3 variables and the same 250 observations on each variable, estimate a VAR. One estimates a VAR(6), while the other estimates a VAR(4). The determinants of the variance-covariance matrices of the residuals for each VAR are 0.0036 and 0.0049 respectively. What is the values of the test statistic for performing a test of whether the VAR(6) can be restricted to a VAR(4)?
+A. 77.07
+B. 0.31
+C. 0.33
+D. 4.87
+Answer:",mmlu,mmlu-45,Label.NONE
+46,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is a DISADVANTAGE of using pure time-series models (relative to structural models)?
+A. They are not theoretically motivated
+B. They cannot produce forecasts easily
+C. They cannot be used for very high frequency data
+D. It is difficult to determine the appropriate explanatory variables for use in pure time-series models
+Answer:",mmlu,mmlu-46,Label.NONE
+47,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are alternative names for the dependent variable (usually denoted by y) in linear regression analysis?
+
+(i) The regressand
+
+(ii) The regressor
+
+(iii) The explained variable
+
+(iv) The explanatory variable
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-47,Label.NONE
+48,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are advantages of the VAR approach to modelling the relationship between variables relative to the estimation of full structural models?
+
+i) VARs receive strong motivation from financial and economic theory
+
+
+ii) VARs in their reduced forms can be used easily to produce time-series forecasts
+
+
+iii) VAR models are typically highly parsimonious
+
+
+iv) OLS can be applied separately to each equation in a reduced form VAR
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-48,Label.NONE
+49,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is TRUE concerning the standard regression model?
+A. y has a probability distribution
+B. x has a probability distribution
+C. The disturbance term is assumed to be correlated with x
+D. For an adequate model, the residual (u-hat) will be zero for all sample data points
+Answer:",mmlu,mmlu-49,Label.NONE
+50,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the following model for $y_t$:
+
+$y_t = \mu + \lambda t + u_t$
+
+Which one of the following most accurately describes the process for $y_t$?
+A. A unit root process
+B. A stationary process
+C. A deterministic trend process
+D. A random walk with drift
+Answer:",mmlu,mmlu-50,Label.NONE
+51,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is correct concerning logit and probit models?
+A. They use a different method of transforming the model so that the probabilities lie between zero and one
+B. The logit model can result in too many observations falling at exactly zero or exactly one
+C. For the logit model, the marginal effect of a change in one of the explanatory variables is simply the estimate of the parameter attached to that variable, whereas this is not the case for the probit model
+D. The probit model is based on a cumulative logistic function
+Answer:",mmlu,mmlu-51,Label.NONE
+52,"The following are multiple choice questions (with answers) about econometrics.
+
+What is the most important disadvantage of the diagonal VECH approach to building multivariate GARCH models that is overcome by the BEKK formulation?
+A. The diagonal VECH model is hard to interpret intuitively
+B. The diagonal VECH model contains too many parameters
+C. The diagonal VECH model does not ensure a positive-definite variance-covariance matrix
+D. The BEKK model reduces the dimensionality problem that arises when a number of series are modelled together.
+Answer:",mmlu,mmlu-52,Label.NONE
+53,"The following are multiple choice questions (with answers) about econometrics.
+
+If a relevant variable is omitted from a regression equation, the consequences would be that:
+
+i) The standard errors would be biased
+
+
+ii) If the excluded variable is uncorrelated with all of the included variables, all of
+
+the slope coefficients will be inconsistent.
+
+
+iii) If the excluded variable is uncorrelated with all of the included variables, the
+
+intercept coefficient will be inconsistent.
+
+
+iv) If the excluded variable is uncorrelated with all of the included variables, all of
+
+the slope and intercept coefficients will be consistent and unbiased but inefficient.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-53,Label.NONE
+54,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are alternative names for the independent variable (usually denoted by x) in linear regression analysis?
+
+(i) The regressor
+
+(ii) The regressand
+
+(iii) The causal variable
+
+(iv) The effect variable
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-54,Label.NONE
+55,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the OLS estimator for the standard error of the slope coefficient. Which of the following statement(s) is (are) true?
+
+(i) The standard error will be positively related to the residual variance
+
+(ii) The standard error will be negatively related to the dispersion of the observations on the explanatory variable about their mean value
+
+(iii) The standard error will be negatively related to the sample size
+
+(iv) The standard error gives a measure of the precision of the coefficient estimate.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-55,Label.NONE
+56,"The following are multiple choice questions (with answers) about econometrics.
+
+What is the meaning of the term ""heteroscedasticity""?
+A. The variance of the errors is not constant
+B. The variance of the dependent variable is not constant
+C. The errors are not linearly independent of one another
+D. The errors have non-zero mean
+Answer:",mmlu,mmlu-56,Label.NONE
+57,"The following are multiple choice questions (with answers) about econometrics.
+
+If a Durbin Watson statistic takes a value close to zero, what will be the value of the first order autocorrelation coefficient?
+A. Close to zero
+B. Close to plus one
+C. Close to minus one
+D. Close to either minus one or plus one
+Answer:",mmlu,mmlu-57,Label.NONE
+58,"The following are multiple choice questions (with answers) about econometrics.
+
+Under the null hypothesis of a Bera-Jarque test, the distribution has
+A. Zero skewness and zero kurtosis
+B. Zero skewness and a kurtosis of three
+C. Skewness of one and zero kurtosis
+D. Skewness of one and kurtosis of three.
+Answer:",mmlu,mmlu-58,Label.NONE
+59,"The following are multiple choice questions (with answers) about econometrics.
+
+If an estimator is said to be consistent, it is implied that
+A. On average, the estimated coefficient values will equal the true values
+B. The OLS estimator is unbiased and no other unbiased estimator has a smaller variance
+C. The estimates will converge upon the true values as the sample size increases
+D. The coefficient estimates will be as close to their true values as possible for small and large samples.
+Answer:",mmlu,mmlu-59,Label.NONE
+60,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is a typical characteristic of financial asset return time-series?
+A. Their distributions are thin-tailed
+B. They are not weakly stationary
+C. They are highly autocorrelated
+D. They have no trend
+Answer:",mmlu,mmlu-60,Label.NONE
+61,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following assumptions are required to show the consistency, unbiasedness and efficiency of the OLS estimator?
+
+i) $E(u_t) = 0$
+
+
+ii) $\text{Var}(u_t) = \sigma^2$
+
+
+iii) $\text{Cov}(u_t, u_{t-j}) = 0 \forall j$
+
+
+iv) $u_t \sim N(0, \sigma^2)$
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-61,Label.NONE
+62,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is a disadvantage of the fixed effects approach to estimating a panel model?
+A. The model is likely to be technical to estimate
+B. The approach may not be valid if the composite error term is correlated with one or more of the explanatory variables
+C. The number of parameters to estimate may be large, resulting in a loss of degrees of freedom
+D. The fixed effects approach can only capture cross-sectional heterogeneity and not temporal variation in the dependent variable.
+Answer:",mmlu,mmlu-62,Label.NONE
+63,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider an identical situation to that of question 21, except that now a 2-sided alternative is used. What would now be the appropriate conclusion?
+A. H0 is rejected
+B. H0 is not rejected
+C. H1 is rejected
+D. There is insufficient information given in the question to reach a conclusion
+Answer:",mmlu,mmlu-63,Label.NONE
+64,"The following are multiple choice questions (with answers) about econometrics.
+
+The price of a house is best described as what type of number?
+A. Discrete
+B. Cardinal
+C. Ordinal
+D. Nominal
+Answer:",mmlu,mmlu-64,Label.NONE
+65,"The following are multiple choice questions (with answers) about econometrics.
+
+If a Johansen ""trace"" test for a null hypothesis of 2 cointegrating vectors is applied to a system containing 4 variables is conducted, which eigenvalues would be used in the test?
+A. All of them
+B. The largest 2
+C. The smallest 2
+D. The second largest
+Answer:",mmlu,mmlu-65,Label.NONE
+66,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is true concerning variance decomposition analysis of VARs?
+
+i) Variance decompositions measure the impact of a unit shock to each of the variables on the VAR
+
+ii) Variance decompositions can be thought of as measuring the proportion of the forecast error variance that is attributable to each variable
+
+iii) The ordering of the variables is important for calculating impulse responses but not variance decompositions
+
+iv) It is usual that most of the forecast error variance for a given variable is attributable to shocks to that variable
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-66,Label.NONE
+67,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that we have estimated a GARCH model for daily equity returns, and we are interested in producing a 10-day forecast of the volatility (measured by the standard deviation of returns) for use in a value at risk model. How could such a forecast most validly be calculated?
+A. Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up
+B. Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts and add them up and take the square root
+C. Produce 1, 2, 3, ..., 10 step ahead conditional variance forecasts, take the square roots of each one and add them up
+D. Produce a 1-step ahead conditional variance forecast, take its square root and multiply it by the square root of 10
+Answer:",mmlu,mmlu-67,Label.NONE
+68,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that the value of $R^2$ for an estimated regression model is exactly zero. Which of the following are true?
+
+i) All coefficient estimates on the slopes will be zero
+
+ii) The fitted line will be horizontal with respect to all of the explanatory variables
+
+iii) The regression line has not explained any of the variability of y about its mean value
+
+iv) The intercept coefficient estimate must be zero.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-68,Label.NONE
+69,"The following are multiple choice questions (with answers) about econometrics.
+
+A white noise process will have
+
+(i) A zero mean
+
+(ii) A constant variance
+
+(iii) Autocovariances that are constant
+
+(iv) Autocovariances that are zero except at lag zero
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-69,Label.NONE
+70,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning the Box-Jenkins approach to diagnostic testing for ARMA models?
+
+(i) The tests will show whether the identified model is either too large or too small
+
+(ii) The tests involve checking the model residuals for autocorrelation, heteroscedasticity, and non-normality
+
+(iii) If the model suggested at the identification stage is appropriate, the acf and pacf for the residuals should show no additional structure
+
+(iv) If the model suggested at the identification stage is appropriate, the coefficients on the additional variables under the overfitting approach will be statistically insignificant
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-70,Label.NONE
+71,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following would be a plausible response to a finding of residual non-normality?
+A. Use a logarithmic functional form instead of a linear one
+B. Add lags of the variables on the right hand side of the regression model
+C. Estimate the model in first differenced form
+D. Remove any large outliers from the data.
+Answer:",mmlu,mmlu-71,Label.NONE
+72,"The following are multiple choice questions (with answers) about econometrics.
+
+The fixed effects panel model is also sometimes known as
+A. A seemingly unrelated regression model
+B. The least squares dummy variables approach
+C. The random effects model
+D. Heteroscedasticity and autocorrelation consistent
+Answer:",mmlu,mmlu-72,Label.NONE
+73,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements is TRUE concerning OLS estimation?
+A. OLS minimises the sum of the vertical distances from the points to the line
+B. OLS minimises the sum of the squares of the vertical distances from the points to the line
+C. OLS minimises the sum of the horizontal distances from the points to the line
+D. OLS minimises the sum of the squares of the horizontal distances from the points to the line.
+Answer:",mmlu,mmlu-73,Label.NONE
+74,"The following are multiple choice questions (with answers) about econometrics.
+
+If the standard tools for time-series analysis, such as estimation of the acf, pacf and spectral analysis, find no evidence of structure in the data, this implies that the data are which of the following?
+A. Normally distributed
+B. Uncorrelated
+C. Independent
+D. Fat-tailed
+Answer:",mmlu,mmlu-74,Label.NONE
+75,"The following are multiple choice questions (with answers) about econometrics.
+
+If two variables, $x_t$ and $y_t$ are said to be cointegrated, which of the following statements are true?
+
+i) $x_t$ and $y_t$ must both be stationary
+
+
+ii) Only one linear combination of $x_t$ and $y_t$ will be stationary
+
+
+iii) The cointegrating equation for $x_t$ and $y_t$ describes the short-run relationship
+
+between the two series
+
+
+iv) The residuals of a regression of $y_t$ on $x_t$ must be stationary
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-75,Label.NONE
+76,"The following are multiple choice questions (with answers) about econometrics.
+
+A dependent variable whose values are not observable outside a certain range but where the corresponding values of the independent variables are still available would be most accurately described as what kind of variable?
+A. Censored
+B. Truncated
+C. Multinomial variable
+D. Discrete choice
+Answer:",mmlu,mmlu-76,Label.NONE
+77,"The following are multiple choice questions (with answers) about econometrics.
+
+A Hausman test would be used for
+A. Determining whether an equation that is part of a simultaneous system is identified
+B. Determining whether a simultaneous framework is needed for a particular variable
+C. Determining whether 2SLS or ILS is optimal
+D. Determining whether the structural form equations can be obtained via substitution from the reduced forms
+Answer:",mmlu,mmlu-77,Label.NONE
+78,"The following are multiple choice questions (with answers) about econometrics.
+
+Under the matrix notation for the classical linear regression model, $y = X \beta + u$, what are the dimensions of $u$?
+A. T x k
+B. T x 1
+C. k x 1
+D. 1 x 1
+Answer:",mmlu,mmlu-78,Label.NONE
+79,"The following are multiple choice questions (with answers) about econometrics.
+
+How many parameters will be required to be estimated in total for all equations of a standard form, unrestricted, tri-variate VAR(4), ignoring the intercepts?
+A. 12
+B. 4
+C. 3
+D. 36
+Answer:",mmlu,mmlu-79,Label.MATH
+80,"The following are multiple choice questions (with answers) about econometrics.
+
+A researcher tests for structural stability in the following regression model:
+
+$y_t = \beta_1 + \beta_2 x_{2t} + \beta_3 x_{3t} + u_t$
+
+The total sample of 200 observations is split exactly in half for the sub-sample regressions. Which would be the unrestricted residual sum of squares?
+A. The RSS for the whole sample
+B. The RSS for the first sub-sample
+C. The RSS for the second sub-sample
+D. The sum of the RSS for the first and second sub-samples
+Answer:",mmlu,mmlu-80,Label.NONE
+81,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that we are interested in testing the null hypothesis that a GARCH(2,2) model can be restricted to a process with a constant conditional variance using the likelihood ratio test approach. Which of the following statements are true?
+A. The test statistic will follow a chi-squared distribution with 2 degrees of freedom under the null hypothesis
+B. The value of the log-likelihood function will almost always be bigger for the restricted model than for the unrestricted model
+C. If the relevant values of the log-likelihood functions are -112.3 and -118.4, the value of the test statistic is 12.2
+D. The likelihood ratio test compares the slopes of the log-likelihood function at the maximum and at the restricted parameter value.
+Answer:",mmlu,mmlu-81,Label.NONE
+82,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following is NOT a plausible remedy for near multicollinearity?
+A. Use principal components analysis
+B. Drop one of the collinear variables
+C. Use a longer run of data
+D. Take logarithms of each of the variables
+Answer:",mmlu,mmlu-82,Label.NONE
+83,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the following AR(2) process:
+
+yt = 1.5 yt-1 - 0.5 yt-2 + ut
+
+This is a
+A. Stationary process
+B. Unit root process
+C. Explosive process
+D. Stationary and unit root process
+Answer:",mmlu,mmlu-83,Label.NONE
+84,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following could be used as a test for autocorrelation up to third order?
+A. The Durbin Watson test
+B. White's test
+C. The RESET test
+D. The Breusch-Godfrey test
+Answer:",mmlu,mmlu-84,Label.NONE
+85,"The following are multiple choice questions (with answers) about econometrics.
+
+The residual from a standard regression model is defined as
+A. The difference between the actual value, y, and the mean, y-bar
+B. The difference between the fitted value, y-hat, and the mean, y-bar
+C. The difference between the actual value, y, and the fitted value, y-hat
+D. The square of the difference between the fitted value, y-hat, and the mean, y-bar
+Answer:",mmlu,mmlu-85,Label.NONE
+86,"The following are multiple choice questions (with answers) about econometrics.
+
+If OLS is applied separately to each equation that is part of a simultaneous system, the resulting estimates will be
+A. Unbiased and consistent
+B. Biased but consistent
+C. Biased and inconsistent
+D. It is impossible to apply OLS to equations that are part of a simultaneous system
+Answer:",mmlu,mmlu-86,Label.NONE
+87,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following is NOT an example of mis-specification of functional form?
+A. Using a linear specification when y scales as a function of the squares of x
+B. Using a linear specification when a double-logarithmic model would be more appropriate
+C. Modelling y as a function of x when in fact it scales as a function of 1/x
+D. Excluding a relevant variable from a linear regression model
+Answer:",mmlu,mmlu-87,Label.NONE
+88,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that we wished to evaluate the factors that affected the probability that an investor would choose an equity fund rather than a bond fund or a cash investment. Which class of model would be most appropriate?
+A. A logit model
+B. A multinomial logit
+C. A tobit model
+D. An ordered logit model
+Answer:",mmlu,mmlu-88,Label.NONE
+89,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements will be true if the number of replications used in a Monte Carlo study is small?
+
+i) The statistic of interest may be estimated imprecisely
+
+
+ii) The results may be affected by unrepresentative combinations of random draws
+
+
+iii) The standard errors on the estimated quantities may be unacceptably large
+
+
+iv) Variance reduction techniques can be used to reduce the standard errors
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iv) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-89,Label.NONE
+90,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following is a disadvantage of the random effects approach to estimating a panel model?
+A. The approach may not be valid if the composite error term is correlated with one or more of the explanatory variables
+B. The number of parameters to estimate may be large, resulting in a loss of degrees of freedom
+C. The random effects approach can only capture cross-sectional heterogeneity and not temporal variation in the dependent variable.
+D. All of (a) to (c) are potential disadvantages of the random effects approach.
+Answer:",mmlu,mmlu-90,Label.NONE
+91,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following could result in autocorrelated residuals?
+
+i) Slowness of response of the dependent variable to changes in the values of the independent variables
+
+ii) Over-reactions of the dependent variable to changes in the independent variables
+
+iii) Omission of relevant explanatory variables that are autocorrelated
+
+iv) Outliers in the data
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-91,Label.NONE
+92,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning the acf and pacf?
+
+(i) The acf and pacf are often hard to interpret in practice
+
+(ii) The acf and pacf can be difficult to calculate for some data sets
+
+(iii) Information criteria represent an alternative approach to model order determination
+
+(iv) If applied correctly, the acf and pacf will always deliver unique model selections
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-92,Label.NONE
+93,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following conditions are necessary for a series to be classifiable as a weakly stationary process?
+
+(i) It must have a constant mean
+
+(ii) It must have a constant variance
+
+(iii) It must have constant autocovariances for given lags
+
+(iv) It must have a constant probability distribution
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-93,Label.NONE
+94,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the following equation and determine the class of model that it best represents
+
+$y_{it} = \alpha + \beta_{it} + \mu_i + \nu_{it}$
+A. An entity fixed effects model
+B. A time fixed effects model
+C. A random effects model
+D. A pure time series model
+Answer:",mmlu,mmlu-94,Label.NONE
+95,"The following are multiple choice questions (with answers) about econometrics.
+
+Note that statistical tables are not necessary to answer this question. For a sample of 1000 observations, the Dickey-Fuller test statistic values are
+A. More negative than (i.e. bigger in absolute value than) those in the left hand tail of a normal distribution
+B. Less negative than (i.e. smaller in absolute value than) those in the left hand tail of a normal distribution
+C. Obtained from an analytical formula for the density of the Dickey-Fuller distribution
+D. More negative (i.e. bigger in absolute value) for a 10% size of test than a 5% test.
+Answer:",mmlu,mmlu-95,Label.NONE
+96,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that a hypothesis test is conducted using a 5% significance level. Which of the following statements are correct?
+
+(i) The significance level is equal to the size of the test
+
+(ii) The significance level is equal to the power of the test
+
+(iii) 2.5% of the total distribution will be in each tail rejection region for a 2-sided test
+
+(iv) 5% of the total distribution will be in each tail rejection region for a 2-sided test.
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-96,Label.NONE
+97,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following criticisms of the Dickey-Fuller/Engle-Granger approach to dealing with cointegrated variables is overcome by the Engle-Yoo (EY) procedure?
+A. In the context of small samples, Dickey Fuller tests are prone to conclude that there is a unit root in a series when there is not
+B. The Engle-Granger (EG) approach can only detect up to one cointegrating relationship even though there could be more than one
+C. The variables are treated asymmetrically in the cointegrating tests
+D. It is not possible to perform tests about the cointegrating relationship
+Answer:",mmlu,mmlu-97,Label.NONE
+98,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider a series that follows an MA(1) with zero mean and a moving average coefficient of 0.4. What is the value of the autocovariance at lag 1?
+A. 0.4
+B. 1
+C. 0.34
+D. It is not possible to determine the value of the autocovariances without knowing the disturbance variance.
+Answer:",mmlu,mmlu-98,Label.NONE
+99,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following estimation techniques are available for the estimation of over-identified systems of simultaneous equations?
+
+i) OLS
+
+ii) ILS
+
+iii) 2SLS
+
+iv) IV
+A. (iii) only
+B. (iii) and (iv) only
+C. (ii), (iii), and (iv) only
+D. (i), (ii), (iii) and (iv)
+Answer:",mmlu,mmlu-99,Label.NONE
+100,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following statements best describes a Type II error?
+A. It is the probability of incorrectly rejecting the null hypothesis
+B. It is equivalent to the power of the test
+C. It is equivalent to the size of the test
+D. It is the probability of failing to reject a null hypothesis that was wrong
+Answer:",mmlu,mmlu-100,Label.NONE
+101,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following would be the most appropriate as a 95% (two-sided) confidence interval for the intercept term of the model given in question 21?
+A. (-4.79,2.19)
+B. (-4.16,4.16)
+C. (-1.98,1.98)
+D. (-5.46,2.86)
+Answer:",mmlu,mmlu-101,Label.NONE
+102,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are characteristics of a stationary process?
+
+i) It crosses its mean value frequently
+
+
+ii) It has constant mean and variance
+
+
+iii) It contains no trend component
+
+
+iv) It will be stationary in first difference form
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-102,Label.NONE
+103,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider again the VAR model of equation 16. Which of the following conditions must hold for it to be said that there is bi-directional feedback?
+A. The b and d coefficients significant and the a and c coefficients insignificant
+B. The a and c coefficients significant and the b and d coefficients insignificant
+C. The a and c coefficients significant
+D. The b and d coefficients significant
+Answer:",mmlu,mmlu-103,Label.NONE
+104,"The following are multiple choice questions (with answers) about econometrics.
+
+Consider the following sample autocorrelation estimates obtained using 250 data points:
+
+1) Lag 1 2 3
+
+2) Coefficient 0.2 -0.15 -0.1
+
+3) Assuming that the coefficients are approximately normally distributed, which of the coefficients are statistically significant at the 5% level?
+A. 1 only
+B. 1 and 2 only
+C. 1, 2 and 3 only
+D. It is not possible to determine the statistical significance since no standard errors have been given
+Answer:",mmlu,mmlu-104,Label.NONE
+105,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following is examined by looking at a goodness of fit statistic?
+A. How well the population regression function fits the data
+B. How well the sample regression function fits the population regression function
+C. How well the sample regression function fits the data
+D. How well the population regression function fits the sample regression function.
+Answer:",mmlu,mmlu-105,Label.NONE
+106,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are correct concerning the use of antithetic variates as part of a Monte Carlo experiment?
+
+i) Antithetic variates work by reducing the number of replications required to cover the whole probability space
+
+ii) Antithetic variates involve employing a similar variable to that used in the simulation, but whose properties are known analytically
+
+iii) Antithetic variates involve using the negative of each of the random draws and repeating the experiment using those values as the draws
+
+iv) Antithetic variates involve taking one over each of the random draws and repeating the experiment using those values as the draws
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iv) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-106,Label.NONE
+107,"The following are multiple choice questions (with answers) about econometrics.
+
+Which one of the following statements is true concerning alternative forecast accuracy measures?
+A. Mean squared error is usually highly correlated with trading rule profitability
+B. Mean absolute error provides a quadratic loss function
+C. Mean absolute percentage error is a useful measure for evaluating asset return forecasts
+D. Mean squared error penalises large forecast errors disproportionately more than small forecast errors
+Answer:",mmlu,mmlu-107,Label.NONE
+108,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following criticisms of standard (""plain vanilla"") GARCH models can be overcome by EGARCH models?
+
+i) Estimated coefficient values from GARCH models may be negative
+
+ii) GARCH models cannot account for leverage effects
+
+iii) The responsiveness of future volatility to positive and negative shocks is symmetric under a GARCH formulation
+
+iv) GARCH models cannot allow for a feedback from the volatility to the returns
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-108,Label.NONE
+109,"The following are multiple choice questions (with answers) about econometrics.
+
+Suppose that 100 separate firms were tested to determine how many of them ""beat the market"" using a Jensen-type regression, and it is found that 3 fund managers significantly do so. Does this suggest prima facie evidence for stock market inefficiency?
+A. Yes
+B. No
+C. In order to answer this question, you would need to test every fund manager trading in that market
+D. There is insufficient information given in the question to draw a conclusion about market efficiency.
+Answer:",mmlu,mmlu-109,Label.NONE
+110,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following are advantages of the use of panel data over pure cross-sectional or pure time-series modelling?
+
+(i) The use of panel data can increase the number of degrees of freedom and therefore the power of tests
+
+(ii) The use of panel data allows the average value of the dependent variable to vary either cross-sectionally or over time or both
+
+(iii) The use of panel data enables the researcher allows the estimated relationship between the independent and dependent variables to vary either cross-sectionally or over time or both
+A. (i) only
+B. (i) and (ii) only
+C. (ii) only
+D. (i), (ii), and (iii)
+Answer:",mmlu,mmlu-110,Label.NONE
+111,"The following are multiple choice questions (with answers) about econometrics.
+
+If the Engle-Granger test is applied to the residuals of a potentially cointegrating regression, what would be the interpretation of the null hypothesis?
+A. The variables are cointegrated
+B. The variables are not cointegrated
+C. Both variables are stationary
+D. Both variables are non-stationary
+Answer:",mmlu,mmlu-111,Label.NONE
+112,"The following are multiple choice questions (with answers) about econometrics.
+
+Which of the following statements are true concerning the autocorrelation function (acf) and partial autocorrelation function (pacf)?
+
+i) The acf and pacf will always be identical at lag one whatever the model
+
+ii) The pacf for an MA(q) model will in general be non-zero beyond lag q
+
+iii) The pacf for an AR(p) model will be zero beyond lag p
+
+iv) The acf and pacf will be the same at lag two for an MA(1) model
+A. (ii) and (iv) only
+B. (i) and (iii) only
+C. (i), (ii), and (iii) only
+D. (i), (ii), (iii), and (iv)
+Answer:",mmlu,mmlu-112,Label.NONE
