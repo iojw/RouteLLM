@@ -20,6 +20,31 @@ benchmark_files = {
 
 combined_scores = {}
 
+categories = {}
+
+for model in ["Llama-2-70b-chat-hf", "CodeLlama-34b-Instruct-hf", "MetaMath-70B-V1.0"]:
+    print(f"{model}\n========")
+    for benchmark, (
+        filename,
+        classification_filename,
+        score_col,
+        num_prompts,
+    ) in benchmark_files.items():
+        benchmark_df = pd.read_csv(filename)
+        classification_df = pd.read_csv(classification_filename)
+
+        merged_df = pd.merge(benchmark_df, classification_df, on="prompt_id")
+        model_df = merged_df[merged_df["model"] == model]
+
+        assert (
+            len(model_df) == num_prompts
+        ), f"Expected {num_prompts} prompts for {benchmark}, got {len(model_df)}"
+
+        total_score = model_df[score_col].mean()
+        print(f"{benchmark}:\n{total_score}")
+    print()
+
+print("RouteLLM\n========")
 for benchmark, (
     filename,
     classification_filename,
