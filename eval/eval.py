@@ -18,8 +18,30 @@ benchmark_files = {
     "MTBench": ("mtbench/mtbench.csv", "classification/mtbench.csv", "score", 80),
 }
 
-combined_scores = {}
 
+for model in ["Llama-2-70b-chat-hf", "CodeLlama-34b-Instruct-hf", "MetaMath-70B-V1.0"]:
+    print(f"{model}\n========")
+    for benchmark, (
+        filename,
+        classification_filename,
+        score_col,
+        num_prompts,
+    ) in benchmark_files.items():
+        benchmark_df = pd.read_csv(filename)
+        classification_df = pd.read_csv(classification_filename)
+
+        merged_df = pd.merge(benchmark_df, classification_df, on="prompt_id")
+        model_df = merged_df[merged_df["model"] == model]
+
+        assert (
+            len(model_df) == num_prompts
+        ), f"Expected {num_prompts} prompts for {benchmark}, got {len(model_df)}"
+
+        total_score = model_df[score_col].mean()
+        print(f"{benchmark}: {total_score}")
+    print()
+
+print("RouteLLM\n========")
 for benchmark, (
     filename,
     classification_filename,
@@ -32,16 +54,13 @@ for benchmark, (
     merged_df = pd.merge(benchmark_df, classification_df, on="prompt_id")
 
     coding_df = merged_df[
-        (merged_df["prediction"] == "Label.CODING")
-        & (merged_df["model"] == "CodeLlama-34b-Instruct-hf")
+        (merged_df["prediction"] == "Label.CODING") & (merged_df["model"] == "CodeLlama-34b-Instruct-hf")
     ]
     none_df = merged_df[
-        (merged_df["prediction"] == "Label.NONE")
-        & (merged_df["model"] == "Llama-2-70b-chat-hf")
+        (merged_df["prediction"] == "Label.NONE") & (merged_df["model"] == "Llama-2-70b-chat-hf")
     ]
     math_df = merged_df[
-        (merged_df["prediction"] == "Label.MATH")
-        & (merged_df["model"] == "MetaMath-70B-V1.0")
+        (merged_df["prediction"] == "Label.MATH") & (merged_df["model"] == "MetaMath-70B-V1.0")
     ]
 
     combined_df = pd.concat([coding_df, none_df, math_df])
@@ -51,7 +70,4 @@ for benchmark, (
     ), f"Expected {num_prompts} prompts for {benchmark}, got {len(combined_df)}"
 
     total_score = combined_df[score_col].mean()
-    combined_scores[benchmark] = total_score
-
-for benchmark, score in combined_scores.items():
-    print(f"{benchmark}: {score}")
+    print(f"{benchmark}: {total_score}")
