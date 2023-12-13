@@ -36,16 +36,10 @@ for benchmark, (
         & (merged_df["model"] == "gpt-4")
     ]
 
-
     cost += coding_df['tokens'].sum() / 1000 * 0.03
     cost += math_df['tokens'].sum() / 1000 * 0.03
-    cost += none_df['tokens'].sum() / 1000 * 0.001
+    cost += none_df['tokens'].sum() / 1000 * 0.0009
     cost_per_1000_tokens = cost / (coding_df['tokens'].sum() + math_df['tokens'].sum() + none_df['tokens'].sum()) * 1000
-
-    # cost += coding_df['tokens'].sum() * 0.00003
-    # cost += math_df['tokens'].sum() * 0.00003
-    # cost += none_df['tokens'].sum() * 0.000001
-    # cost_per_1000_tokens = cost / (coding_df['tokens'].sum() + math_df['tokens'].sum() + none_df['tokens'].sum()) * 1000
 
     combined_df = pd.concat([coding_df, none_df, math_df])
 
