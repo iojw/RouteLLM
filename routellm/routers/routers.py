@@ -1,6 +1,7 @@
 import abc
 import functools
 import random
+import time
 
 import numpy as np
 import torch
@@ -101,6 +102,17 @@ class CausalLLMRouter(Router):
         else:
             return 1 - output["binary_prob"]
 
+    def batch_calculate_strong_win_rate(self, prompts):
+        input = {}
+        input["messages"] = self.to_openai_messages(prompts)
+        print(f"Passing in inputs {input['messages']}")
+        output = self.router_model(input)
+        if output is None:
+            # Route to strong model if output is invalid
+            return 1
+        else:
+            return 1 - output["binary_prob"]
+
 
 @no_parallel
 class BERTRouter(Router):
@@ -118,6 +130,7 @@ class BERTRouter(Router):
         inputs = self.tokenizer(
             prompt, return_tensors="pt", padding=True, truncation=True
         )
+        print(f"Passing in inputs {inputs['input_ids'].shape}")
         with torch.no_grad():
             outputs = self.model(**inputs)
             logits = outputs.logits.numpy()[0]
@@ -128,6 +141,25 @@ class BERTRouter(Router):
         # Compute prob of label 1 and 2 (tie, tier 2 wins)
         binary_prob = np.sum(softmax_scores[-2:])
         return 1 - binary_prob
+
+    def batch_calculate_strong_win_rate(self, prompts):
+        start = time.perf_counter()
+        inputs = self.tokenizer(
+            prompts, return_tensors="pt", padding=True, truncation=True
+        )
+        inputs["input_ids"] = inputs["input_ids"][:, :95]
+        with torch.no_grad():
+            outputs = self.model(**inputs)
+            logits = outputs.logits.numpy()[0]
+        end2 = time.perf_counter()
+        # print(f"Model inference time: {end2 - end:.2f} seconds")
+
+        # exp_scores = np.exp(logits - np.max(logits))
+        # softmax_scores = exp_scores / np.sum(exp_scores)
+
+        # # Compute prob of label 1 and 2 (tie, tier 2 wins)
+        # binary_prob = np.sum(softmax_scores[-2:])
+        return 1
 
 
 class SWRankingRouter(Router):
@@ -240,6 +272,11 @@ class MatrixFactorizationRouter(Router):
             self.strong_model_id, self.weak_model_id, prompt
         )
         return winrate
+
+    def batch_calculate_strong_win_rate(self, prompts):
+        return self.model.batch_pred_win_rate(
+            self.strong_model_id, self.weak_model_id, prompts
+        )
 
 
 # Parallelism makes the randomness non deterministic

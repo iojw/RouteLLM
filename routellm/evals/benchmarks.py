@@ -45,9 +45,10 @@ class Benchmark(abc.ABC):
 
 class MMLU(Benchmark):
     def __init__(self, domains, routed_pair, overwrite_cache):
+        assert len(domains) == 1
         self.routed_pair = routed_pair
         self.overwrite_cache = overwrite_cache
-        self.cache_path = f"{CURRENT_DIR}/mmlu/cache.npy"
+        self.cache_path = f"{CURRENT_DIR}/mmlu/cache_{domains[0]}.npy"
 
         try:
             self.cache = np.load(self.cache_path, allow_pickle=True).item()

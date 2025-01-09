@@ -1,3 +1,4 @@
+from collections import defaultdict
 import os
 import random
 
@@ -16,22 +17,24 @@ from routellm.routers.routers import ROUTER_CLS
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
-def generate_results(
-    df_router_result, benchmark, benchmark_name, routed_pair, output, plot_optimal=False
-):
-    plt.figure(figsize=(6, 5))
-    for method in df_router_result["method"].unique():
-        df_per_method = df_router_result[
-            df_router_result["method"] == method
-        ].sort_values(by=["strong_percentage"])
+best_in_domain = defaultdict(list)
 
-        plt.plot(
-            df_per_method["strong_percentage"],
-            df_per_method["accuracy"],
-            label=f"{method}",
-            marker=".",
-            linestyle="-",
-        )
+def generate_results(
+    df_router_result, benchmark, benchmark_name, routed_pair, output, all_domain_results, plot_optimal=False, 
+):
+    # plt.figure(figsize=(6, 5))
+    # for method in df_router_result["method"].unique():
+    #     df_per_method = df_router_result[
+    #         df_router_result["method"] == method
+    #     ].sort_values(by=["strong_percentage"])
+
+    #     plt.plot(
+    #         df_per_method["strong_percentage"],
+    #         df_per_method["accuracy"],
+    #         label=f"{method}",
+    #         marker=".",
+    #         linestyle="-",
+    #     )
 
     weak_accuracy = benchmark.get_model_accuracy(routed_pair.weak)
     print(f"{routed_pair.weak} score: {weak_accuracy}")
@@ -39,40 +42,40 @@ def generate_results(
     strong_accuracy = benchmark.get_model_accuracy(routed_pair.strong)
     print(f"{routed_pair.strong} score: {strong_accuracy}")
 
-    plt.axhline(
-        y=weak_accuracy,
-        color="grey",
-        linestyle="--",
-        label=routed_pair.weak,
-    )
-    plt.axhline(
-        y=strong_accuracy,
-        color="red",
-        linestyle="--",
-        label=routed_pair.strong,
-    )
+    # plt.axhline(
+    #     y=weak_accuracy,
+    #     color="grey",
+    #     linestyle="--",
+    #     label=routed_pair.weak,
+    # )
+    # plt.axhline(
+    #     y=strong_accuracy,
+    #     color="red",
+    #     linestyle="--",
+    #     label=routed_pair.strong,
+    # )
 
-    if plot_optimal:
-        optimal_accs = []
-        optimal_range = range(0, 101, 10)
-        for strong_percent in optimal_range:
-            optimal_accs.append(benchmark.get_optimal_accuracy(strong_percent / 100))
-        plt.plot(
-            optimal_range,
-            optimal_accs,
-            label="Optimal",
-            marker="x",
-            linestyle="-",
-        )
+    # if plot_optimal:
+    #     optimal_accs = []
+    #     optimal_range = range(0, 101, 10)
+    #     for strong_percent in optimal_range:
+    #         optimal_accs.append(benchmark.get_optimal_accuracy(strong_percent / 100))
+    #     plt.plot(
+    #         optimal_range,
+    #         optimal_accs,
+    #         label="Optimal",
+    #         marker="x",
+    #         linestyle="-",
+    #     )
 
-    plt.xlabel("Strong Model Calls (%)")
-    plt.ylabel("Performance")
-    plt.title(f"Router Performance ({benchmark_name})")
-    plt.legend()
+    # plt.xlabel("Strong Model Calls (%)")
+    # plt.ylabel("Performance")
+    # plt.title(f"Router Performance ({benchmark_name})")
+    # plt.legend()
 
-    file_name = f"{output}/{benchmark_name}.png"
-    print("Saving plot to", file_name)
-    plt.savefig(file_name, bbox_inches="tight")
+    # file_name = f"{output}/{benchmark_name}.png"
+    # print("Saving plot to", file_name)
+    # plt.savefig(file_name, bbox_inches="tight")
 
     def pct_call_metric(row):
         df_per_method = df_router_result[
@@ -119,16 +122,25 @@ def generate_results(
     )
     metrics["AUC"] = metrics.apply(auc_metric, axis=1)
     metrics["APGR"] = metrics.apply(apgr_metric, axis=1)
-    metrics = metrics.sort_values(by=["APGR"], ascending=False)
+    metrics = metrics.sort_values(by=["APGR"], ascending=False).reset_index()
+
+    best_in_domain[metrics.iloc[0]["method"]].append(benchmark_name)
 
     with pd.option_context("display.max_rows", None, "display.max_columns", None):
-        print("Metrics:\n", metrics)
+        print(f"Metrics for {benchmark_name}:\n", metrics)
+        for_all = metrics.copy().drop(columns=["20% qual", "50% qual", "80% qual"])
+        for_all["domain"] = benchmark_name
+        for_all["ranking"] = for_all.index
+        pd.concat([all_domain_results, for_all])
+        print("for_all", for_all)
+        print("metrics", metrics)
+        # all_domain_results.sort_values(by=["ranking"], ascending=True)
 
 
-def pretty_print_results(threshold, accuracy, model_counts, total):
+def pretty_print_results(threshold, accuracy, model_counts, total, name):
     header = (
         "=" * 15
-        + f" {router} with threshold {threshold} on {args.benchmark} "
+        + f" {router} with threshold {threshold} on {name} "
         + "=" * 15
     )
     print("\n" + header)
@@ -205,7 +217,7 @@ if __name__ == "__main__":
     if args.benchmark == "mmlu":
         print("Running eval for full MMLU.")
         mmlu_domains = ALL_MMLU_DOMAINS
-        benchmark = MMLU(mmlu_domains, controller.model_pair, args.overwrite_cache)
+        # benchmark = MMLU(mmlu_domains, controller.model_pair, args.overwrite_cache)
     elif args.benchmark == "mt-bench":
         print("Running eval for MT Bench.")
         benchmark = MTBench(controller.model_pair, args.overwrite_cache)
@@ -215,58 +227,65 @@ if __name__ == "__main__":
     else:
         raise ValueError(f"Invalid benchmark {args.benchmark}")
 
-    all_results = pd.DataFrame()
-    for router in controller.routers:
-        # Ensure reproducibility on a per-router basis
-        random.seed(0)
-        # For non-deterministic routers like random, we average over multiple runs
-        if router in ["random"]:
-            router_results = []
-            for i in range(args.random_iters):
+    all_domain_results = pd.DataFrame()
+    for domain in ALL_MMLU_DOMAINS:
+        all_results = pd.DataFrame()
+        benchmark = MMLU([domain], controller.model_pair, args.overwrite_cache) 
+        for router in controller.routers:
+            # Ensure reproducibility on a per-router basis
+            random.seed(0)
+            # For non-deterministic routers like random, we average over multiple runs
+            if router in ["random"]:
+                router_results = []
+                for i in range(args.random_iters):
+                    for threshold, accuracy, model_counts, total in benchmark.evaluate(
+                        controller, router, args.num_results, True
+                    ):
+                        router_results.append(
+                            {
+                                "threshold": threshold,
+                                "strong_percentage": model_counts[
+                                    controller.model_pair.strong
+                                ]
+                                / total
+                                * 100,
+                                "accuracy": accuracy,
+                            }
+                        )
+                router_results_df = (
+                    pd.DataFrame(router_results)
+                    .groupby(["strong_percentage"], as_index=False)
+                    .mean()
+                )
+                router_results_df["method"] = str(router)
+                all_results = pd.concat([all_results, router_results_df])
+            else:
+                router_results = []
                 for threshold, accuracy, model_counts, total in benchmark.evaluate(
-                    controller, router, args.num_results, True
+                    controller, router, args.num_results, False
                 ):
-                    router_results.append(
-                        {
-                            "threshold": threshold,
-                            "strong_percentage": model_counts[
-                                controller.model_pair.strong
-                            ]
-                            / total
-                            * 100,
-                            "accuracy": accuracy,
-                        }
-                    )
-            router_results_df = (
-                pd.DataFrame(router_results)
-                .groupby(["strong_percentage"], as_index=False)
-                .mean()
-            )
-            router_results_df["method"] = str(router)
-            all_results = pd.concat([all_results, router_results_df])
-        else:
-            router_results = []
-            for threshold, accuracy, model_counts, total in benchmark.evaluate(
-                controller, router, args.num_results, False
-            ):
-                print(f"Evaluating router: {router} with threshold {threshold}...")
-                pretty_print_results(threshold, accuracy, model_counts, total)
+                    # print(f"Evaluating router: {router} with threshold {threshold}...")
+                    # pretty_print_results(threshold, accuracy, model_counts, total, args.benchmark + f"_{domain}")
 
-                result = {
-                    "method": str(router),
-                    "threshold": threshold,
-                    "strong_percentage": model_counts[controller.model_pair.strong]
-                    / total
-                    * 100,
-                    "accuracy": accuracy,
-                }
-                router_results.append(result)
-            all_results = pd.concat([all_results, pd.DataFrame(router_results)])
+                    result = {
+                        "method": str(router),
+                        "threshold": threshold,
+                        "strong_percentage": model_counts[controller.model_pair.strong]
+                        / total
+                        * 100,
+                        "accuracy": accuracy,
+                    }
+                    router_results.append(result)
+                all_results = pd.concat([all_results, pd.DataFrame(router_results)])
 
-    generate_results(
-        all_results,
-        benchmark,
-        args.benchmark,
-        controller.model_pair.strong,
-        args.output,
-    )
+        generate_results(
+            all_results,
+            benchmark,
+            args.benchmark + f"_{domain}",
+            controller.model_pair,
+            args.output,
+            all_domain_results
+        )
+
+        print(all_domain_results)
+        print(best_in_domain)

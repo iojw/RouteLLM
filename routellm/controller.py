@@ -120,7 +120,7 @@ class Controller:
         prompts: pd.Series,
         router: str,
     ):
-        self._validate_router_threshold(router, 0)
+        # self._validate_router_threshold(router, 0)
         router_instance = self.routers[router]
         if router_instance.NO_PARALLEL and self.progress_bar:
             return prompts.progress_apply(router_instance.calculate_strong_win_rate)
